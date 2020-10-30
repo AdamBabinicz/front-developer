@@ -33,6 +33,7 @@ const QuoteIcon = styled.div`
   font-size: 35px;
   text-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72);
   cursor: pointer;
+  z-index: 1;
 
   a {
     transition: all 0.3s ease-in-out;
