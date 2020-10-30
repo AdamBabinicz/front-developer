@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="346.62mm" height="225.78mm" version="1.1" viewBox="0 0 1228.1961 799.99997" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="e">
+   <path d="m-6.3812 115.3-266.17 700h900l38.024-100 152.1-400h-92.666l-152.1 400h-707.33l190.12-500h900l0.0521-0.13672-160.28-99.863z" fill="#b40000" filter="url(#b)"/>
+  </clipPath>
+  <clipPath id="f">
+   <path d="m-6.3812 115.3-266.17 700h900l38.024-100 152.1-400h-92.666l-152.1 400h-707.33l190.12-500h900l0.0521-0.13672-160.28-99.863z" fill="#b40000" filter="url(#b)"/>
+  </clipPath>
+  <filter id="b" x="-.065938" y="-.11569" width="1.1319" height="1.2314" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="33.743432"/>
+  </filter>
+  <clipPath id="c">
+   <path d="m55.596 215.3-38.024 100-152.1 400h92.666l158.01-400h701.42l-190.12 500h-900l160.5 100h801.48l266.17-700h-900z" fill="#f00000" filter="url(#a)"/>
+  </clipPath>
+  <clipPath id="d">
+   <path d="m55.596 215.3-38.024 100-152.1 400h92.666l158.01-400h701.42l-190.12 500h-900l160.5 100h801.48l266.17-700h-900z" fill="#f00000" filter="url(#a)"/>
+  </clipPath>
+  <filter id="a" x="-.065939" y="-.11569" width="1.1319" height="1.2314" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="33.74252"/>
+  </filter>
+ </defs>
+ <g transform="translate(379.81 -260.93)">
+  <g transform="translate(-107.26 145.63)">
+   <path d="m-6.3812 115.3-266.17 700h900l38.024-100 152.1-400h-92.666l-152.1 400h-707.33l190.12-500h900l0.0521-0.13672-160.28-99.863z" clip-path="url(#e)"/>
+   <path d="m-6.3812 115.3-266.17 700h900l38.024-100 152.1-400h-92.666l-152.1 400h-707.33l190.12-500h900l0.0521-0.13672-160.28-99.863z" clip-path="url(#f)" fill="#b40000" filter="url(#b)"/>
+   <path d="m55.596 215.3-38.024 100-152.1 400h92.666l158.01-400h701.42l-190.12 500h-900l160.5 100h801.48l266.17-700h-900z" clip-path="url(#c)"/>
+   <path d="m55.596 215.3-38.024 100-152.1 400h92.666l158.01-400h701.42l-190.12 500h-900l160.5 100h801.48l266.17-700h-900z" clip-path="url(#d)" fill="#f00000" filter="url(#a)"/>
+  </g>
+ </g>
+</svg>
