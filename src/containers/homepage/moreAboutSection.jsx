@@ -59,7 +59,7 @@ export function MoreAboutSection(props) {
           {<br />} A więc bez względu na to, czy tworzysz małą lub dużą firmę,
           jesteś we właściwym miejscu.{<br />}
           {<br />}Zaufaj mojemu doświadczeniu i umiejętnościom zdobytym na
-          przestrzeniu wielu lat!
+          przestrzeni wielu lat!
         </AboutText>
         <AboutImg src={AboutImgUrl}></AboutImg>
       </AboutContainer>
