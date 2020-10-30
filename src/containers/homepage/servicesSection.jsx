@@ -30,7 +30,7 @@ export function ServicesSection(props) {
       />
       <OurService
         title="Optymalizacja responsywna"
-        description="Do marca 2021 r. jedynie strony przystosowane do urządzeń mobilnych mają szanse na indeksację przez Google. Tylko to, co się znajduje w mobilnej wersji witryny, będzie wykorzystywane do indeksowania oraz klasyfikowania w wyszukiwarce."
+        description="Od marca 2021 r. jedynie strony przystosowane do urządzeń mobilnych mają szanse na indeksację przez Google. Tylko to, co się znajduje w mobilnej wersji witryny, będzie wykorzystywane do indeksowania oraz klasyfikowania w wyszukiwarce."
         imgUrl={Service2Img}
         isReversed
       />
