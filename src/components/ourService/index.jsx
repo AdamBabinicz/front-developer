@@ -16,7 +16,7 @@ const ServiceContainer = styled.div`
 const ServiceImg = styled.img`
   width: 22em;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 18em;
   }
 `;
@@ -48,7 +48,7 @@ const Details = styled.p`
   text-align: center;
   max-width: 55%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     min-width: 100%;
     padding: 0 20px;
   }

@@ -18,7 +18,7 @@ const AboutContainer = styled.div`
   align-items: center;
   max-width: 1000px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     max-width: 100%;
     flex-direction: column-reverse;
   }
@@ -29,7 +29,7 @@ const AboutText = styled.p`
   font-weight: normal;
   line-height: 1.4;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     margin-top: 2rem;
   }
 `;
