@@ -6,7 +6,7 @@ import { Marginer } from "../../components/marginer";
 import { OurService } from "../../components/ourService";
 import Service1Img from "../../assets/illustrations/seob.png";
 import Service2Img from "../../assets/illustrations/mb.png";
-import Service3Img from "../../assets/illustrations/ab.png";
+import Service3Img from "../../assets/illustrations/tvb.png";
 
 const ServicesContainer = styled(Element)`
   width: 100%;

@@ -17,7 +17,9 @@ const ServiceImg = styled.img`
   width: 22em;
 
   @media screen and (max-width: 768px) {
-    width: 18em;
+    /* width: 18em; */
+    width: 90%;
+    margin: 0 auto;
   }
 `;
 const DescriptionContainer = styled.div`
@@ -26,7 +28,7 @@ const DescriptionContainer = styled.div`
   align-items: center;
   max-width: 60%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     max-width: 100%;
   }
 `;
@@ -37,8 +39,9 @@ const Title = styled.h2`
   margin: 5px 0;
   width: 50%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     margin-top: 1.5em;
+    width: 90%;
   }
 `;
 const Details = styled.p`
@@ -49,8 +52,9 @@ const Details = styled.p`
   max-width: 55%;
 
   @media screen and (max-width: 768px) {
-    min-width: 100%;
-    padding: 0 20px;
+    /* min-width: 100%; */
+    max-width: 90%;
+    padding: 0 5px;
   }
 `;
 

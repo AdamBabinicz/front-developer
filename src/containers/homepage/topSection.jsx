@@ -38,12 +38,14 @@ const MotivationalText = styled.h1`
 `;
 const DownArrowContainer = styled.div`
   position: absolute;
-  bottom: 25px;
+  top: 95%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -95%);
 
   @media screen and (max-width: 480px) {
-    bottom: 135px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
   }
 `;
 

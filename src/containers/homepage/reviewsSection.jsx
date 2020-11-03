@@ -44,10 +44,10 @@ const ReviewsContainer = styled(Element)`
 `;
 
 const StyledCarouselProvider = styled(CarouselProvider)`
-  width: 70%;
-  position: relative;
+  width: 80%;
+  /* position: relative; */
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
@@ -64,14 +64,22 @@ const StyledSlide = styled(Slide)`
 
 const StyledDotGroup = styled(DotGroup)`
   margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 2.5rem;
+    /* position: absolute; */
+    margin-bottom: 5rem;
+  }
 
   @media screen and (max-width: 480px) {
     margin-top: 0;
-    position: absolute;
-    bottom: 2.5rem;
+    /* position: absolute; */
+    bottom: 1rem;
   }
   button {
     width: 11px;
@@ -154,15 +162,15 @@ export function ReviewsSection(props) {
           <StyledSlide index={6}>
             <ReviewCard
               reviewText="Pa-Mi"
-              username="Ślusarstwo artystyczne"
+              username="Ślusarstwo art."
               userImgUrl={User7Img}
               userurl="//www.pa-mi.pl"
             />
           </StyledSlide>
           <StyledSlide index={7}>
             <ReviewCard
-              reviewText="Roszada Radom"
-              username="UKS"
+              reviewText="Roszada"
+              username="UKS Radom"
               userImgUrl={User8Img}
               userurl="//roszada.radom.pl"
             />
@@ -226,7 +234,7 @@ export function ReviewsSection(props) {
           <StyledSlide index={15}>
             <ReviewCard
               reviewText="Resurrexit"
-              username="Formacja charyzmatyczna"
+              username="Grupa charyzmatyczna"
               userImgUrl={User16Img}
               userurl="//resurrexit.netlify.app"
             />

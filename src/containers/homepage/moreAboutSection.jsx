@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 import styled from "styled-components";
 import { SectionTitle } from "../../components/sectionTitle";
 import { theme } from "../../theme";
-import AboutImgUrl from "../../assets/pictures/comic.png";
+import AboutImgUrl from "../../assets/pictures/a-b.svg";
 
 const MoreAboutContainer = styled(Element)`
   min-height: 500px;
@@ -38,10 +38,11 @@ const AboutImg = styled.img`
   height: auto;
   margin-left: 2em;
 
-  @media screen and (max-width: 480px) {
-    width: 370px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    /* width: 370px; */
     /* height: 290px; */
-    margin-left: 0;
+    margin: 0 auto;
   }
 `;
 

@@ -19,6 +19,11 @@ const CardContainer = styled.div`
   justify-content: space-around;
   align-items: center;
 
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    margin-top: 3rem;
+  }
+
   @media screen and (max-width: 480px) {
     max-height: 300px;
     width: 80%;
@@ -40,8 +45,17 @@ const QuoteIcon = styled.div`
     color: ${theme.primary};
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1100px) {
     font-size: 25px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    top: 6px;
+    left: 7px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 35px;
   }
 
   a:hover {
@@ -50,13 +64,26 @@ const QuoteIcon = styled.div`
 `;
 
 const ReviewText = styled.p`
-  font-size: 28px;
+  /* font-size: 28px; */
+  font-size: clamp(1rem, 2.5vw, 3rem);
   color: ${theme.primary};
   font-weight: normal;
   display: flex;
   justify-content: center;
   text-align: center;
   text-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72);
+
+  /* @media screen and (max-width: 1100px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  } */
+
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+  }
 `;
 
 const Line = styled.span`
@@ -70,20 +97,47 @@ const Line = styled.span`
 const UserDetails = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 `;
 
 const UserImg = styled.img`
   width: 145px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-bottom: 20px;
   box-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 1100px) {
+    width: 135px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 165px;
+  }
 `;
 
 const Username = styled.span`
-  font-size: 15px;
+  /* font-size: 20px; */
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: ${theme.primary};
+  margin-left: 0.5rem;
+
+  /* @media screen and (max-width: 1100px) {
+    font-size: 15px;
+  } */
+
+  /* @media screen and (max-width: 768px) {
+    font-size: 15px;
+  } */
 `;
 const UserUrl = styled.span`
   cursor: pointer;
