@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../../theme";
 
 const ButtonWrapper = styled.button`
@@ -10,17 +10,29 @@ const ButtonWrapper = styled.button`
   font-weight: bold;
   font-size: ${({ small }) => (small ? "10px" : "12px")};
   border: 2px solid transparent;
-  outline: none;
   margin: 0 auto;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  outline: none;
 
   &:hover {
-    box-sizing: border-box;
-    background: transparent;
-    border: 2px solid ${theme.primary};
+    background: ${theme.secondary};
+    border: 2px solid ${theme.third};
     color: ${theme.primary};
   }
+
+  ${({ smallB }) =>
+    smallB &&
+    css`
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      font-size: 24px;
+      background: rgb(253, 253, 253);
+      border-radius: 50%;
+      color: #00000096;
+      outline: none;
+    `};
 `;
 
 export function Button(props) {

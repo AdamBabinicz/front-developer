@@ -3,4 +3,5 @@ export const theme = {
   secondary: "rgba(0, 0, 0, 0.342)",
   third: "rgba(255, 255, 255, 0.158)",
   fourth: "#00000096;",
+  sixth: "rgb(233, 233, 233)",
 };
