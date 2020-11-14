@@ -27,6 +27,7 @@ import User13Img from "../../assets/pictures/13b.jpg";
 import User14Img from "../../assets/pictures/14b.jpg";
 import User15Img from "../../assets/pictures/15b.jpg";
 import User16Img from "../../assets/pictures/16b.jpg";
+import User17Img from "../../assets/pictures/dom.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -106,7 +107,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={16}
+        totalSlides={17}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -148,7 +149,7 @@ export function ReviewsSection(props) {
               reviewText="Portfolio"
               username="Projekt prywatny"
               userImgUrl={User5Img}
-              userurl="//parodysta.000webhostapp.com"
+              userurl="//parodysta.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={5}>
@@ -237,6 +238,14 @@ export function ReviewsSection(props) {
               username="Grupa charyzmatyczna"
               userImgUrl={User16Img}
               userurl="//resurrexit.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={16}>
+            <ReviewCard
+              reviewText="Domy i ludzie"
+              username="Projekt prywatny"
+              userImgUrl={User17Img}
+              userurl="//czarna.netlify.app/"
             />
           </StyledSlide>
         </Slider>
