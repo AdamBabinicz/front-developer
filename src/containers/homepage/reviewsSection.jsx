@@ -108,7 +108,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={17}
+        totalSlides={18}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
