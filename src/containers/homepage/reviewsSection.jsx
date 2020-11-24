@@ -28,6 +28,7 @@ import User14Img from "../../assets/pictures/14b.jpg";
 import User15Img from "../../assets/pictures/15b.jpg";
 import User16Img from "../../assets/pictures/16b.jpg";
 import User17Img from "../../assets/pictures/dom.jpg";
+import User18Img from "../../assets/pictures/poetry.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -246,6 +247,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User17Img}
               userurl="//czarna.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={17}>
+            <ReviewCard
+              reviewText="Wiersze"
+              username="Projekt prywatny"
+              userImgUrl={User18Img}
+              userurl="//poetry.netlify.app/"
             />
           </StyledSlide>
         </Slider>
