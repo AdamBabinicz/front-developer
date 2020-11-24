@@ -251,7 +251,7 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={17}>
             <ReviewCard
-              reviewText="Wiersze"
+              reviewText="Wiersze antypowabne"
               username="Projekt prywatny"
               userImgUrl={User18Img}
               userurl="//poetry.netlify.app/"
