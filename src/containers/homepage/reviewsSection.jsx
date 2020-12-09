@@ -29,6 +29,7 @@ import User15Img from "../../assets/pictures/15b.jpg";
 import User16Img from "../../assets/pictures/16b.jpg";
 import User17Img from "../../assets/pictures/dom.jpg";
 import User18Img from "../../assets/pictures/poetry.jpg";
+import User19Img from "../../assets/pictures/solna.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -108,7 +109,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={18}
+        totalSlides={19}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -255,6 +256,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User18Img}
               userurl="//poetry.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={18}>
+            <ReviewCard
+              reviewText="Dom na Solnej"
+              username="Projekt prywatny"
+              userImgUrl={User19Img}
+              userurl="//solna.netlify.app/"
             />
           </StyledSlide>
         </Slider>
