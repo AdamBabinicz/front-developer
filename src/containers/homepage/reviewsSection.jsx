@@ -30,6 +30,7 @@ import User16Img from "../../assets/pictures/16b.jpg";
 import User17Img from "../../assets/pictures/dom.jpg";
 import User18Img from "../../assets/pictures/poetry.jpg";
 import User19Img from "../../assets/pictures/solna.jpg";
+import User20Img from "../../assets/pictures/17b.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -109,7 +110,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={19}
+        totalSlides={20}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -264,6 +265,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User19Img}
               userurl="//solna.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={19}>
+            <ReviewCard
+              reviewText="Korzenie rodów Gierczak i Ofiara"
+              username="Projekt prywatny"
+              userImgUrl={User20Img}
+              userurl="//korzenie.netlify.app/"
             />
           </StyledSlide>
         </Slider>
