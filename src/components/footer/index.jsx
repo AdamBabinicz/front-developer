@@ -435,7 +435,7 @@ export function Footer(props) {
             </SocialIcon>
           </SocialContainer>
         </AccessibilityContainer>
-        <RightsReserved>ag 2020 - 2021</RightsReserved>
+        <RightsReserved>ag 2020 - {new Date().getFullYear()}.</RightsReserved>
       </FooterContainer>
     </>
   );
