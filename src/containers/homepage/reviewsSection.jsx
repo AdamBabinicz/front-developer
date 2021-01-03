@@ -31,6 +31,7 @@ import User17Img from "../../assets/pictures/dom.jpg";
 import User18Img from "../../assets/pictures/poetry.jpg";
 import User19Img from "../../assets/pictures/solna.jpg";
 import User20Img from "../../assets/pictures/17b.jpg";
+import User21Img from "../../assets/pictures/ob.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -110,7 +111,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={20}
+        totalSlides={21}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -273,6 +274,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User20Img}
               userurl="//korzenie.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={20}>
+            <ReviewCard
+              reviewText="Ognisko plastyczne"
+              username="Projekt prywatny"
+              userImgUrl={User21Img}
+              userurl="//ognisko.netlify.app/"
             />
           </StyledSlide>
         </Slider>
