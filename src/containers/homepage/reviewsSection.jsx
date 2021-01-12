@@ -32,6 +32,8 @@ import User18Img from "../../assets/pictures/poetry.jpg";
 import User19Img from "../../assets/pictures/solna.jpg";
 import User20Img from "../../assets/pictures/17b.jpg";
 import User21Img from "../../assets/pictures/ob.jpg";
+import User22Img from "../../assets/pictures/mk.jpg";
+import User23Img from "../../assets/pictures/mapa.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -111,7 +113,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={21}
+        totalSlides={23}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -249,7 +251,7 @@ export function ReviewsSection(props) {
               reviewText="Domy i ludzie"
               username="Projekt prywatny"
               userImgUrl={User17Img}
-              userurl="//czarna.netlify.app/"
+              userurl="//czarna.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={17}>
@@ -257,7 +259,7 @@ export function ReviewsSection(props) {
               reviewText="Wiersze antypowabne"
               username="Projekt prywatny"
               userImgUrl={User18Img}
-              userurl="//poetry.netlify.app/"
+              userurl="//poetry.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={18}>
@@ -265,7 +267,7 @@ export function ReviewsSection(props) {
               reviewText="Dom na Solnej"
               username="Projekt prywatny"
               userImgUrl={User19Img}
-              userurl="//solna.netlify.app/"
+              userurl="//solna.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={19}>
@@ -273,7 +275,7 @@ export function ReviewsSection(props) {
               reviewText="Korzenie rodów Gierczak i Ofiara"
               username="Projekt prywatny"
               userImgUrl={User20Img}
-              userurl="//korzenie.netlify.app/"
+              userurl="//korzenie.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={20}>
@@ -281,7 +283,23 @@ export function ReviewsSection(props) {
               reviewText="Ognisko plastyczne"
               username="Projekt prywatny"
               userImgUrl={User21Img}
-              userurl="//ognisko.netlify.app/"
+              userurl="//ognisko.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={21}>
+            <ReviewCard
+              reviewText="Monika Knapczyk"
+              username="Pisarka, wydawca, blogerka"
+              userImgUrl={User22Img}
+              userurl="//monika-knapczyk.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={22}>
+            <ReviewCard
+              reviewText="Mapa życiowa ..."
+              username="Projekt prywatny"
+              userImgUrl={User23Img}
+              userurl="//droga.netlify.app"
             />
           </StyledSlide>
         </Slider>
