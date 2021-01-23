@@ -42,10 +42,10 @@ const DownArrowContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -95%);
 
-  @media screen and (max-width: 480px) {
-    top: 75%;
+  @media screen and (max-width: 768px) {
+    top: 98%;
     left: 50%;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -98%);
   }
 `;
 

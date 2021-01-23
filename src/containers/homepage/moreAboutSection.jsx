@@ -52,14 +52,14 @@ export function MoreAboutSection(props) {
       <SectionTitle>O mnie</SectionTitle>
       <AboutContainer>
         <AboutText>
-          Zajmuję się projektowaniem, budowaniem i pozycjonowaniem najwyższej
-          jakości witryn internetowych. {<br />}
+          Zajmuję się projektowaniem, budowaniem i&nbsp;pozycjonowaniem
+          najwyższej jakości witryn internetowych. {<br />}
           {<br />} Dbam o to, aby uzyskać najlepsze wyniki wyszukiwania Twojej
-          strony w oparciu o pożądane słowa i frazy kluczowe.
+          strony w oparciu o pożądane słowa i&nbsp;frazy kluczowe.
           {<br />}
           {<br />} A więc bez względu na to, czy tworzysz małą lub dużą firmę,
           jesteś we właściwym miejscu.{<br />}
-          {<br />}Zaufaj mojemu doświadczeniu i umiejętnościom zdobytym na
+          {<br />}Zaufaj mojemu doświadczeniu i&nbsp;umiejętnościom zdobytym na
           przestrzeni wielu lat!
         </AboutText>
         <AboutImg src={AboutImgUrl}></AboutImg>
