@@ -50,8 +50,8 @@ const MotivationalText = styled.h1`
   margin: 0;
   text-align: center;
 
-  @media screen and (max-width: 480px) {
-    font-size: 14px;
+  @media screen and (max-width: 678px) {
+    font-size: 18px;
   }
 `;
 const Line = styled.span`
@@ -92,12 +92,12 @@ const SocialIcon = styled.div`
   &:not(:last-of-type) {
     margin-right: 11px;
 
-    @media screen and (max-width: 480px) {
-      margin-right: 9px;
+    @media screen and (max-width: 678px) {
+      margin-right: 20px;
     }
   }
   @media screen and (max-width: 480px) {
-    font-size: 14px;
+    font-size: 18px;
   }
   &:hover {
     color: ${theme.third};
@@ -112,12 +112,12 @@ const LinkExt = styled(Link)`
   &:not(:last-of-type) {
     margin-right: 11px;
 
-    @media screen and (max-width: 480px) {
-      margin-right: 9px;
+    @media screen and (max-width: 678px) {
+      margin-right: 20px;
     }
   }
   @media screen and (max-width: 480px) {
-    font-size: 12px;
+    font-size: 20px;
   }
   &:hover {
     color: ${theme.third};
@@ -150,6 +150,11 @@ const ModalContainer = styled.div`
   justify-content: center;
   flex-direction: column;
 
+  /* @media screen and (max-width: 678px) {
+    min-width: 100%;
+    background: red;
+  } */
+
   p {
     color: ${theme.secondary};
     text-align: center;
@@ -158,13 +163,13 @@ const ModalContainer = styled.div`
 const Skills = styled.div`
   color: ${theme.secondary};
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(50px, auto));
   margin-top: 1rem;
   margin-bottom: 3rem;
   width: 100%;
 
-  @media screen and (max-width: 480px) {
-    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+  @media screen and (max-width: 678px) {
+    grid-template-columns: repeat(auto-fit, minmax(40px, auto));
     margin-top: clamp(0.5rem, 2.5vw, 1rem);
   }
 `;

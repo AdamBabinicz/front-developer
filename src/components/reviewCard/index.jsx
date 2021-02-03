@@ -16,7 +16,7 @@ const CardContainer = styled.div`
   padding: 10px 1.2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 768px) {
@@ -78,7 +78,7 @@ const ReviewText = styled.p`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 15px;
   } */
 
   @media screen and (max-width: 480px) {

@@ -47,6 +47,12 @@ const DownArrowContainer = styled.div`
     left: 50%;
     transform: translate(-50%, -98%);
   }
+
+  @media screen and (max-width: 480px) {
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -92%);
+  }
 `;
 
 export function TopSection(props) {

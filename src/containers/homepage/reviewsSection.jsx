@@ -34,6 +34,8 @@ import User20Img from "../../assets/pictures/17b.jpg";
 import User21Img from "../../assets/pictures/ob.jpg";
 import User22Img from "../../assets/pictures/mk.jpg";
 import User23Img from "../../assets/pictures/mapa.jpg";
+import User24Img from "../../assets/pictures/dino-b.jpg";
+import User25Img from "../../assets/pictures/epi.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -113,7 +115,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={23}
+        totalSlides={25}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -300,6 +302,22 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User23Img}
               userurl="//droga.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={23}>
+            <ReviewCard
+              reviewText="Dinozaury Krystiana"
+              username="Projekt prywatny"
+              userImgUrl={User24Img}
+              userurl="//dinozaury.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={24}>
+            <ReviewCard
+              reviewText="Epifaniusz Drowniak"
+              username="Projekt prywatny"
+              userImgUrl={User25Img}
+              userurl="//nikifor.netlify.app"
             />
           </StyledSlide>
         </Slider>
