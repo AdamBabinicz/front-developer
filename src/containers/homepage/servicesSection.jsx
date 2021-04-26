@@ -2,7 +2,7 @@ import React from "react";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 import { SectionTitle } from "../../components/sectionTitle";
-import { Marginer } from "../../components/marginer";
+import { Marginer } from "../../components/navbar/marginer";
 import { OurService } from "../../components/ourService";
 import Service1Img from "../../assets/illustrations/seob.png";
 import Service2Img from "../../assets/illustrations/mb.png";

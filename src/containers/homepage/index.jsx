@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { TopSection } from "./topSection";
 import { ServicesSection } from "./servicesSection";
 import { ReviewsSection } from "./reviewsSection";
-import { Marginer } from "../../components/marginer";
+import { Marginer } from "../../components/navbar/marginer";
 import { MoreAboutSection } from "./moreAboutSection";
 import { Footer } from "../../components/footer";
 

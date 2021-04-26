@@ -2,8 +2,8 @@ import { CarouselProvider, DotGroup, Slide, Slider } from "pure-react-carousel";
 import React from "react";
 import { Element } from "react-scroll";
 import styled from "styled-components";
-import { Marginer } from "../../components/marginer";
-import { ReviewCard } from "../../components/reviewCard";
+import { Marginer } from "../../components/navbar/marginer";
+import { ReviewCard } from "../../components/navbar/reviewCard";
 import { SectionTitle } from "../../components/sectionTitle";
 import { useMediaQuery } from "react-responsive";
 import "pure-react-carousel/dist/react-carousel.es.css";
@@ -37,6 +37,11 @@ import User23Img from "../../assets/pictures/mapa.jpg";
 import User24Img from "../../assets/pictures/dino-b.jpg";
 import User25Img from "../../assets/pictures/epi.jpg";
 import User26Img from "../../assets/pictures/sara.jpg";
+import User27Img from "../../assets/pictures/zamki-b.jpg";
+import User28Img from "../../assets/pictures/pralnia-b.jpg";
+import User29Img from "../../assets/pictures/moj-jezus.jpg";
+import User30Img from "../../assets/pictures/faustyna.jpg";
+import User31Img from "../../assets/pictures/magnus-ab.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -116,7 +121,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={26}
+        totalSlides={31}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -327,6 +332,46 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User26Img}
               userurl="//ginczanka.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={26}>
+            <ReviewCard
+              reviewText="Wynajem urządzeń rekreacyjnych"
+              username="Firma eventowa"
+              userImgUrl={User27Img}
+              userurl="//zamki.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={27}>
+            <ReviewCard
+              reviewText="Pralnia stacjonarna i mobilna"
+              username="Firma usługowa"
+              userImgUrl={User28Img}
+              userurl="//pranie-dywanow.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={28}>
+            <ReviewCard
+              reviewText="Mój Jezus"
+              username="Projekt prywatny"
+              userImgUrl={User29Img}
+              userurl="//moj-jezus.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={29}>
+            <ReviewCard
+              reviewText="Św. Faustyna"
+              username="Projeky prywatny"
+              userImgUrl={User30Img}
+              userurl="//faustyna.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={30}>
+            <ReviewCard
+              reviewText="Magnus Carlsen"
+              username="Projekt prywatny"
+              userImgUrl={User31Img}
+              userurl="//carlsen.netlify.app"
             />
           </StyledSlide>
         </Slider>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BackgroundImg from "../../assets/pictures/binary-g.jpg";
 import { Logo } from "../../components/logo";
-import { Marginer } from "../../components/marginer";
+import { Marginer } from "../../components/navbar/marginer";
 import { Button } from "../../components/button";
 import { DownArrow } from "../../components/downArrow";
 import { Navbar } from "../../components/navbar";

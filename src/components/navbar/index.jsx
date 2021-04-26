@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "../button";
 import { Logo } from "../logo";
-import { Marginer } from "../../components/marginer";
+import { Marginer } from "./marginer";
 import { theme } from "../../theme";
 import { faBloggerB } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

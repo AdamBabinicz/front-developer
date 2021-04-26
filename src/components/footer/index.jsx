@@ -4,7 +4,7 @@ import BackgroundImg from "../../assets/pictures/codeb.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../button";
 import { Logo } from "../logo";
-import { Marginer } from "../marginer";
+import { Marginer } from "../navbar/marginer";
 import { theme } from "../../theme";
 import {
   faTwitter,
