@@ -361,7 +361,7 @@ export function ReviewsSection(props) {
           <StyledSlide index={29}>
             <ReviewCard
               reviewText="Św. Faustyna"
-              username="Projeky prywatny"
+              username="Projekt prywatny"
               userImgUrl={User30Img}
               userurl="//faustyna.netlify.app"
             />
