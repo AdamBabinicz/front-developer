@@ -42,6 +42,10 @@ import User28Img from "../../assets/pictures/pralnia-b.jpg";
 import User29Img from "../../assets/pictures/moj-jezus.jpg";
 import User30Img from "../../assets/pictures/faustyna.jpg";
 import User31Img from "../../assets/pictures/magnus-ab.jpg";
+import User32Img from "../../assets/pictures/matejko.jpg";
+import User33Img from "../../assets/pictures/library.jpg";
+import User34Img from "../../assets/pictures/holmes.jpg";
+import User35Img from "../../assets/pictures/starcy.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -121,7 +125,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={31}
+        totalSlides={35}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -372,6 +376,38 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User31Img}
               userurl="//carlsen.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={31}>
+            <ReviewCard
+              reviewText="Jan Matejko"
+              username="Projekt prywatny"
+              userImgUrl={User32Img}
+              userurl="//matejko.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={32}>
+            <ReviewCard
+              reviewText="Biblioteka Aleksandryjska"
+              username="Projekt prywatny"
+              userImgUrl={User33Img}
+              userurl="//aleksandryjska.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={33}>
+            <ReviewCard
+              reviewText="Sherlock Holmes"
+              username="Projekt prywatny"
+              userImgUrl={User34Img}
+              userurl="//sherry-holmes.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={34}>
+            <ReviewCard
+              reviewText="Starcy"
+              username="Projekt prywatny"
+              userImgUrl={User35Img}
+              userurl="//starcy.netlify.app"
             />
           </StyledSlide>
         </Slider>
