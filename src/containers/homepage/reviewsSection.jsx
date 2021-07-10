@@ -48,6 +48,7 @@ import User34Img from "../../assets/pictures/holmes.jpg";
 import User35Img from "../../assets/pictures/starcy.jpg";
 import User36Img from "../../assets/pictures/heller.jpg";
 import User37Img from "../../assets/pictures/woda.jpg";
+import User38Img from "../../assets/pictures/17.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -127,7 +128,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={37}
+        totalSlides={38}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -426,6 +427,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User37Img}
               userurl="//oksydan.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={37}>
+            <ReviewCard
+              reviewText="Woda na Ziemi"
+              username="Projekt prywatny"
+              userImgUrl={User38Img}
+              userurl="//rodzice.netlify.app"
             />
           </StyledSlide>
         </Slider>
