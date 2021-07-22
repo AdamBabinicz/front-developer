@@ -49,6 +49,7 @@ import User35Img from "../../assets/pictures/starcy.jpg";
 import User36Img from "../../assets/pictures/heller.jpg";
 import User37Img from "../../assets/pictures/woda.jpg";
 import User38Img from "../../assets/pictures/17.jpg";
+import User39Img from "../../assets/pictures/mak.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -128,7 +129,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={38}
+        totalSlides={39}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -431,10 +432,18 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={37}>
             <ReviewCard
-              reviewText="Woda na Ziemi"
+              reviewText="Marianna i Józef"
               username="Projekt prywatny"
               userImgUrl={User38Img}
               userurl="//rodzice.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={38}>
+            <ReviewCard
+              reviewText="Tadeusz Makowski"
+              username="Projekt prywatny"
+              userImgUrl={User39Img}
+              userurl="//tade.netlify.app"
             />
           </StyledSlide>
         </Slider>
