@@ -51,6 +51,7 @@ import User37Img from "../../assets/pictures/woda.jpg";
 import User38Img from "../../assets/pictures/17.jpg";
 import User39Img from "../../assets/pictures/mak.jpg";
 import User40Img from "../../assets/pictures/plan.jpg";
+import User41Img from "../../assets/pictures/praga.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -130,7 +131,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={40}
+        totalSlides={41}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -453,6 +454,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User40Img}
               userurl="//bozyplan.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={40}>
+            <ReviewCard
+              reviewText="Praga"
+              username="Projekt prywatny"
+              userImgUrl={User41Img}
+              userurl="//praga.netlify.app"
             />
           </StyledSlide>
         </Slider>
