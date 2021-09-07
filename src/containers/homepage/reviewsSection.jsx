@@ -476,7 +476,7 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={42}>
             <ReviewCard
-              reviewText="Gdańsk"
+              reviewText="7 zagadek milenijnych"
               username="Projekt prywatny"
               userImgUrl={User43Img}
               userurl="//perelman.netlify.app"
