@@ -223,7 +223,7 @@ export function ReviewsSection(props) {
               reviewText="Ciasteczkowa Grama"
               username="Szkoła językowa"
               userImgUrl={User11Img}
-              userurl="//.grama.netlify.app"
+              userurl="//grama.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={11}>
