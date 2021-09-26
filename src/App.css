@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  color: rgba(211, 211, 211, 0.541);
 }
 
 @media (prefers-reduced-motion: no-preference) {
