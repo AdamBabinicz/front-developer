@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 import styled from "styled-components";
 import { SectionTitle } from "../../components/sectionTitle";
 import { theme } from "../../theme";
-import AboutImgUrl from "../../assets/pictures/a-b.svg";
+import AboutImgUrl from "../../assets/pictures/1.svg";
 
 const MoreAboutContainer = styled(Element)`
   min-height: 500px;
@@ -35,6 +35,7 @@ const AboutText = styled.p`
 `;
 const AboutImg = styled.img`
   width: 600px;
+  max-width: 100%;
   height: auto;
   margin-left: 2em;
 
@@ -49,17 +50,17 @@ const AboutImg = styled.img`
 export function MoreAboutSection(props) {
   return (
     <MoreAboutContainer name="about">
-      <SectionTitle>O mnie</SectionTitle>
+      <SectionTitle>O nas</SectionTitle>
       <AboutContainer>
         <AboutText>
-          Zajmuję się projektowaniem, budowaniem i&nbsp;pozycjonowaniem
+          Zajmujmy się projektowaniem, budowaniem i&nbsp;pozycjonowaniem
           najwyższej jakości witryn internetowych. {<br />}
-          {<br />} Dbam o to, aby uzyskać najlepsze wyniki wyszukiwania Twojej
+          {<br />} Dbamy o to, aby uzyskać najlepsze wyniki wyszukiwania Twojej
           strony w oparciu o pożądane słowa i&nbsp;frazy kluczowe.
           {<br />}
           {<br />} A więc bez względu na to, czy tworzysz małą lub dużą firmę,
           jesteś we właściwym miejscu.{<br />}
-          {<br />}Zaufaj mojemu doświadczeniu i&nbsp;umiejętnościom zdobytym na
+          {<br />}Zaufaj naszemu doświadczeniu i&nbsp;umiejętnościom zdobytym na
           przestrzeni wielu lat!
         </AboutText>
         <AboutImg src={AboutImgUrl}></AboutImg>

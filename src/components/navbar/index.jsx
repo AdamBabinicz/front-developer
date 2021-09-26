@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Button } from "../button";
 import { Logo } from "../logo";
 import { Marginer } from "./marginer";
 import { theme } from "../../theme";
-import { faBloggerB } from "@fortawesome/free-brands-svg-icons";
+import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import { Element, scroller } from "react-scroll";
+import Popup from "../Popup";
+import img0 from "../../assets/pictures/glob.svg";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -40,6 +42,17 @@ export function Navbar(props) {
   const scrollToNextSection = () => {
     scroller.scrollTo("footer", { smooth: true, duration: 1500 });
   };
+  const [buttonPopup, setButtonPopup] = useState(false);
+  const [state] = useState({
+    title: "Ewa Gierczak-Kucharska",
+    img0: img0,
+    p0: "26-610 Radom, ul. Żeromskiego 95/97 m. 41",
+    p1: "NIP: 9482493499",
+    p2: "REGON: 147375476",
+    p3: "☎ 733 702 632",
+    em0: "email: puaro@vp.pl",
+  });
+
   return (
     <>
       <NavbarContainer>
@@ -51,14 +64,29 @@ export function Navbar(props) {
             Kontakt
           </Button>
           <Marginer direction="horizontal" margin="8px" />
-          <Link
-            exact
-            to="//developer-na-swoim.blogspot.com/"
-            rel="noopener noreferrer"
-            target="_blank"
+          <Button
+            onClick={() => setButtonPopup(true)}
+            // exact
+            // to="//developer-na-swoim.blogspot.com/"
+            // rel="noopener noreferrer"
+            // target="_blank"
           >
-            <FontAwesomeIcon icon={faBloggerB} />
-          </Link>
+            <FontAwesomeIcon icon={faPhoneAlt} />
+          </Button>
+          <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+            <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>
+              {state.title}
+            </h3>
+            <img src={state.img0} alt="..." />
+            <span style={{ fontSize: "16px", textAlign: "center" }}>
+              {state.p0}
+            </span>
+            <span style={{ fontSize: "16px" }}>{state.p1}</span>
+            <span style={{ fontSize: "16px" }}>{state.p2}</span> <br />
+            <span style={{ fontSize: "16px" }}>{state.p3}</span>
+            <em style={{ fontSize: "14px" }}>{state.em0}</em>
+            <br />
+          </Popup>
         </AccessibilityContainer>
       </NavbarContainer>
     </>

@@ -267,7 +267,7 @@ export function Footer(props) {
         </MotivationalText>
         <MotivationalText>Czy masz już swoją?</MotivationalText>
         <Marginer direction="vertical" margin="1em" />
-        <Button onClick={scrollToAbout}>O mnie</Button>
+        <Button onClick={scrollToAbout}>O nas</Button>
         <Marginer direction="vertical" margin="5em" />
         <AccessibilityContainer>
           <PrivacyContainer>

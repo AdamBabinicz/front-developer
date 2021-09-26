@@ -64,11 +64,32 @@ const Modal = () => {
         <br />
         <h2>II Dane osobowe</h2> <br />
         <p>
+          <p>
+            Niniejsza polityka dotyczy serwisu www, funkcjonującego pod adresem
+            url: a-g.netlify.app.
+          </p>
+          <p>
+            Operatorem serwisu oraz Administratorem danych osobowych jest: Ewa
+            Gierczak-Kucharska, ul. Żeromskiego 95/97 m. 41, 26-610 Radom
+            (siedziba firmy).
+          </p>
+          <p>Adres kontaktowy poczty elektronicznej operatora: puaro@vp.pl.</p>
+          <p>
+            Operator jest Administratorem Twoich danych osobowych w odniesieniu
+            do danych podanych dobrowolnie w serwisie.
+          </p>
           Serwis zbiera informacje podane dobrowolnie przez użytkownika. Dane
           osobowe są pozyskiwane podczas kontaktu mailowego bądź telefonicznego
           oraz podczas składania zamówienia. Dane osobowe są wykorzystywane
-          wyłącznie w celu wysyłania korespondencji oraz realizacji zamówienia,
-          o ile wyraził na to zgodę.
+          wyłącznie do prezentacji oferty lub informacji, a także w celu
+          wysyłania korespondencji oraz realizacji zamówienia, o ile użytkownik
+          wyraził na to zgodę.
+        </p>
+        <p>
+          Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich
+          zachowaniu poprzez dobrowolnie wprowadzone w formularzach dane, które
+          zostają wprowadzone do systemów Operatora oraz poprzez zapisywanie w
+          urządzeniach końcowych plików cookie (tzw. „ciasteczka”).
         </p>
         <p>
           Zawartość strony internetowej można przeglądać bez podawania
@@ -91,8 +112,8 @@ const Modal = () => {
         <p>
           Administrator chroni zgromadzone dane osobowe korzystając z
           następujących środków: – szyfrowanie danych służących do
-          korespondencji – zabezpieczenie zbioru danych przed nieuprawnionym
-          dostępem.
+          korespondencji w warstwie transmisji (certyfikat SSL) – zabezpieczenie
+          zbioru danych przed nieuprawnionym dostępem.
         </p>
         <br />
         <h2>III Informacja o plikach cookies</h2> <br />
