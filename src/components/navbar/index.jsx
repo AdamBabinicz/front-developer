@@ -51,6 +51,7 @@ export function Navbar(props) {
     p2: "REGON: 147375476",
     p3: "☎ 733 702 632",
     em0: "email: puaro@vp.pl",
+    mark: "Wystawiamy faktury bez VAT",
   });
 
   return (
@@ -83,9 +84,20 @@ export function Navbar(props) {
             </span>
             <span style={{ fontSize: "16px" }}>{state.p1}</span>
             <span style={{ fontSize: "16px" }}>{state.p2}</span> <br />
-            <span style={{ fontSize: "16px" }}>{state.p3}</span>
+            <span style={{ fontSize: "16px", fontWeight: "bold" }}>
+              {state.p3}
+            </span>
             <em style={{ fontSize: "14px" }}>{state.em0}</em>
             <br />
+            <mark
+              style={{
+                fontSize: "16px",
+                backgroundColor: "rgba(211, 211, 211, 0.541)",
+                padding: "6px 13px",
+              }}
+            >
+              {state.mark}
+            </mark>
           </Popup>
         </AccessibilityContainer>
       </NavbarContainer>
