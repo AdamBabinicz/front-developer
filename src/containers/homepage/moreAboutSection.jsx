@@ -61,7 +61,9 @@ export function MoreAboutSection(props) {
           {<br />} A więc bez względu na to, czy tworzysz małą lub dużą firmę,
           jesteś we właściwym miejscu.{<br />}
           {<br />}Zaufaj naszemu doświadczeniu i&nbsp;umiejętnościom zdobytym na
-          przestrzeni wielu lat!
+          przestrzeni wielu lat! Zamów u nas swoją stronę internetową i pozyskaj
+          nowych Klientów, przyciągając ich wartościową stylistyką i
+          przemawiającą do wyobraźni ofertą!
         </AboutText>
         <AboutImg src={AboutImgUrl}></AboutImg>
       </AboutContainer>
