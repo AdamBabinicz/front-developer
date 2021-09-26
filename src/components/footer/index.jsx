@@ -342,7 +342,7 @@ export function Footer(props) {
                       modal
                     >
                       <SpanText>
-                        Języki programowania stosowane w moich projektach
+                        Języki programowania stosowane w naszych projektach
                       </SpanText>
                     </Popup>
                     <Button
