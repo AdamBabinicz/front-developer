@@ -28,8 +28,8 @@ export default function ContactUs() {
   return (
     <div>
       <div className="container">
-        <form onSubmit={sendEmail} name="contact" method="POST">
-          <input type="hidden" name="form-name" value="contact" />
+        <form onSubmit={sendEmail} name="contact1" method="POST">
+          <input type="hidden" name="form-name" value="contact1" />
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
               <input
