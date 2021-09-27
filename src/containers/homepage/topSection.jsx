@@ -22,6 +22,15 @@ const BackgroundFilter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    font-size: 2em;
+    outline: none;
+
+    @media screen and (max-width: 676px) {
+      font-size: 1.5em;
+    }
+  }
 `;
 const MotivationalText = styled.h2`
   font-size: 34px;
@@ -73,7 +82,9 @@ export function TopSection(props) {
           <MotivationalText>frontend Developer</MotivationalText>
           <MotivationalText>freeLancer</MotivationalText>
           <Marginer direction="vertical" margin="2em" />
-          <Button onClick={scrollToSection}>Projekty</Button>
+          <Button onClick={scrollToSection}>
+            <h1>Projekty</h1>
+          </Button>
           <DownArrowContainer onClick={scrollToNextSection}>
             <DownArrow />
           </DownArrowContainer>
