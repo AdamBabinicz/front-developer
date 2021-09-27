@@ -24,7 +24,7 @@ const BackgroundFilter = styled.div`
   align-items: center;
 
   h1 {
-    font-size: 2em;
+    font-size: 1.7em;
     outline: none;
 
     @media screen and (max-width: 676px) {
