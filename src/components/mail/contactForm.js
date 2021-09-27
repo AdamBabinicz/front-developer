@@ -36,7 +36,7 @@ export default function ContactUs() {
         >
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="contact-form" value="contact" />
               <input
                 type="text"
                 className="form-control"
