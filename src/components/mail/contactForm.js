@@ -36,11 +36,13 @@ export default function ContactUs() {
         >
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
+              <input type="hidden" name="form-name" value="contact" />
               <input
                 type="text"
                 className="form-control"
                 placeholder="Imię i Nazwisko lub Nick"
                 name="name"
+                required
               />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
@@ -49,6 +51,7 @@ export default function ContactUs() {
                 className="form-control"
                 placeholder="Email"
                 name="email"
+                required
               />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
@@ -57,6 +60,7 @@ export default function ContactUs() {
                 className="form-control"
                 placeholder="Temat"
                 name="subject"
+                required
               />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
@@ -67,6 +71,7 @@ export default function ContactUs() {
                 rows="8"
                 placeholder="Twoja wiadomość"
                 name="message"
+                required
               ></textarea>
             </div>
             <div className="col-8 pt-3 mx-auto">
