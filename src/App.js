@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Modal from "./components/modal/Modal";
 import Mail from "./components/mail/Mail";
 import ScrollToTop from "./components/ScrollToTop";
+import Thank from "./components/mail/Thank";
 
 function App(props) {
   return (
@@ -15,6 +16,7 @@ function App(props) {
         {/* <Homepage />; */}
         <Route path="/polityka-prywatnosci" component={Modal} exact />
         <Route path="/kontakt-mailowy" component={Mail} exact />
+        <Route path="/thank" component={Thank} exact />
       </Switch>
     </Router>
   );
