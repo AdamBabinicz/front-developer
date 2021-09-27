@@ -28,13 +28,7 @@ export default function ContactUs() {
   return (
     <div>
       <div className="container">
-        <form
-          onSubmit={sendEmail}
-          name="contact1"
-          method="POST"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-        >
+        <form onSubmit={sendEmail} name="contact1" method="POST">
           <input type="hidden" name="form-name" value="contact1" />
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
@@ -43,6 +37,7 @@ export default function ContactUs() {
                 className="form-control"
                 placeholder="Imię i Nazwisko lub Nick"
                 name="name"
+                id="name"
                 required
               />
             </div>
@@ -52,6 +47,7 @@ export default function ContactUs() {
                 className="form-control"
                 placeholder="Email"
                 name="email"
+                id="email"
                 required
               />
             </div>
@@ -61,13 +57,14 @@ export default function ContactUs() {
                 className="form-control"
                 placeholder="Temat"
                 name="subject"
+                id="subject"
                 required
               />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
               <textarea
                 className="form-control"
-                id=""
+                id="message"
                 cols="30"
                 rows="8"
                 placeholder="Twoja wiadomość"
