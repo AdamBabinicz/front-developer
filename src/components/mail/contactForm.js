@@ -33,7 +33,7 @@ export default function ContactUs() {
           name="contact1"
           method="POST"
           data-netlify="true"
-          action="/thank"
+          action="/dziekujemy-za-wiadomosc"
         >
           <input type="hidden" name="form-name" value="contact1" />
           <div className="row pt-5 mx-auto">

@@ -16,7 +16,7 @@ function App(props) {
         {/* <Homepage />; */}
         <Route path="/polityka-prywatnosci" component={Modal} exact />
         <Route path="/kontakt-mailowy" component={Mail} exact />
-        <Route path="/thank" component={Thank} exact />
+        <Route path="/dziekujemy-za-wiadomosc" component={Thank} exact />
       </Switch>
     </Router>
   );
