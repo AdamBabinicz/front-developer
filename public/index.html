@@ -34,7 +34,13 @@
     <title>ag - nowoczesne strony internetowe</title>
   </head>
   <body>
-    <form name="contact1" method="POST" data-netlify="true" hidden>
+    <form
+      name="contact1"
+      method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      hidden
+    >
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
