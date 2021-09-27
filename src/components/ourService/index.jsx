@@ -66,7 +66,7 @@ export function OurService(props) {
         <Title>{title}</Title>
         <Details>{description}</Details>
       </DescriptionContainer>
-      <ServiceImg src={imgUrl} />
+      <ServiceImg src={imgUrl} alt="..." />
     </ServiceContainer>
   );
 }

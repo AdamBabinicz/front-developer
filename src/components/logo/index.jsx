@@ -41,7 +41,7 @@ export function Logo(props) {
   const { inline, small } = props;
   return (
     <LogoContainer inline={inline} small={small}>
-      <LogoImg src={BrainLogo} inline={inline} small={small} />
+      <LogoImg src={BrainLogo} inline={inline} small={small} alt="..." />
       <LogoText inline={inline} small={small}>
         ag
       </LogoText>

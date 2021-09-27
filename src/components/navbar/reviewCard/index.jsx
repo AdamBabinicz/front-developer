@@ -157,7 +157,7 @@ export function ReviewCard(props) {
       <Marginer direction="vertical" margin="7em" />
       <Line />
       <UserDetails>
-        <UserImg src={userImgUrl} />
+        <UserImg src={userImgUrl} alt="..." />
         <Username>{username}</Username>
       </UserDetails>
     </CardContainer>

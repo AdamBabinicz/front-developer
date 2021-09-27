@@ -42,7 +42,7 @@ const FooterContainer = styled.div`
   align-items: center;
   position: relative;
 `;
-const MotivationalText = styled.h1`
+const MotivationalText = styled.h2`
   font-size: 25px;
   font-weight: 400;
   line-height: 1.4;

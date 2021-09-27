@@ -23,7 +23,7 @@ const BackgroundFilter = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-const MotivationalText = styled.h1`
+const MotivationalText = styled.h2`
   font-size: 34px;
   font-weight: 400;
   line-height: 1.4;
