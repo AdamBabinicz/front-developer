@@ -13,7 +13,9 @@ const Thank = () => {
   return (
     <Container>
       <h1>Dziękuję za wiadomość!</h1>
-      <Button to="/">Powrót</Button>
+      <Button>
+        <Link to="/">Powrót</Link>
+      </Button>
     </Container>
   );
 };
