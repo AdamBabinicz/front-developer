@@ -4,32 +4,32 @@ import React from "react";
 // init("user_0vIHHoNaMVOtM9nPAelrY");
 
 export default function ContactUs() {
-  function sendEmail(e) {
-    e.preventDefault();
+  // function sendEmail(e) {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_bs3flpf",
-        "template_1tecqap",
-        e.target,
-        "user_0vIHHoNaMVOtM9nPAelrY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
+  //   emailjs
+  //     .sendForm(
+  //       "service_bs3flpf",
+  //       "template_1tecqap",
+  //       e.target,
+  //       "user_0vIHHoNaMVOtM9nPAelrY"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  //   e.target.reset();
+  // }
 
   return (
     <div>
       <div className="container">
         <form
-          onSubmit={sendEmail}
+          // onSubmit={sendEmail}
           name="contact1"
           method="POST"
           data-netlify="true"
