@@ -28,7 +28,7 @@ const LogoImg = styled.img`
       height: 4.8em;
     `};
 `;
-const LogoText = styled.h1`
+const LogoText = styled.h2`
   margin-top: ${({ inline }) => (inline ? 0 : "6px")};
   font-size: ${({ inline, small }) =>
     inline ? "18px" : small ? "23px" : "40px"};
