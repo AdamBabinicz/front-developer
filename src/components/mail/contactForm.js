@@ -29,14 +29,14 @@ export default function ContactUs() {
     <div>
       <div className="container">
         <form
-          onSubmit={sendEmail}
+          onSubmit={submit}
           name="contact"
           method="POST"
           data-netlify="true"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
-              <input type="hidden" name="form-name" value="contact-form" />
               <input
                 type="text"
                 className="form-control"
