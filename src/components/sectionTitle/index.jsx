@@ -3,7 +3,7 @@ import { theme } from "../../theme";
 
 const { default: styled } = require("styled-components");
 
-export const SectionTitle = styled.h1`
+export const SectionTitle = styled.h2`
   font-size: 34px;
   margin-top: 4rem;
   font-weight: bold;
