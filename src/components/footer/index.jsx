@@ -271,7 +271,7 @@ export function Footer(props) {
         <Marginer direction="vertical" margin="5em" />
         <AccessibilityContainer>
           <PrivacyContainer>
-            <LinkExt to="/mail">
+            <LinkExt to="/kontakt-mailowy">
               <FontAwesomeIcon icon={faEnvelope} />
             </LinkExt>
 
@@ -390,7 +390,7 @@ export function Footer(props) {
               </ModalContainer> */}
 
             <LinkExt
-              to="/modal"
+              to="/polityka-prywatnosci"
               // rel="noopener noreferrer"
               // target="_blank"
               // aria-label="RODO"

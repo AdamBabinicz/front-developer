@@ -13,8 +13,8 @@ function App(props) {
       <Switch>
         <Route path="/" component={Homepage} exact />
         {/* <Homepage />; */}
-        <Route path="/modal" component={Modal} exact />
-        <Route path="/mail" component={Mail} exact />
+        <Route path="/polityka-prywatnosci" component={Modal} exact />
+        <Route path="/kontakt-mailowy" component={Mail} exact />
       </Switch>
     </Router>
   );

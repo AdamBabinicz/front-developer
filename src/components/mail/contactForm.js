@@ -28,7 +28,12 @@ export default function ContactUs() {
   return (
     <div>
       <div className="container">
-        <form onSubmit={sendEmail}>
+        <form
+          onSubmit={sendEmail}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
               <input
