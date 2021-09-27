@@ -29,7 +29,7 @@ export default function ContactUs() {
     <div>
       <div className="container">
         <form
-          onSubmit={submit}
+          onSubmit={sendEmail}
           name="contact"
           method="POST"
           data-netlify="true"
