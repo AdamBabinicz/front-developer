@@ -240,11 +240,11 @@ const Modal = () => {
           Osoby udostępniające swoje dane osobowe obowiązuje aktualnie
           obowiązująca wersja Polityki Prywatności, dostępna na stronie
           <Link
-            to="//a-g.netlify.app/modal"
+            to="//a-g.netlify.app/polityka-prywatnosci"
             rel="noopener noreferrer"
             target="_blank"
           >
-            &nbsp; a-g.netlify.app/modal
+            &nbsp; a-g.netlify.app/polityka-prywatnosci
           </Link>
         </p>
         <br />
