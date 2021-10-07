@@ -55,6 +55,8 @@ import User41Img from "../../assets/pictures/praga.jpg";
 import User42Img from "../../assets/pictures/gdansk.jpg";
 import User43Img from "../../assets/pictures/perelman.jpg";
 import User44Img from "../../assets/pictures/reagan.jpg";
+import User45Img from "../../assets/pictures/wesele.jpg";
+import User46Img from "../../assets/pictures/alkohol.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -134,7 +136,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={44}
+        totalSlides={46}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -489,6 +491,22 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User44Img}
               userurl="//ronald-reagan.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={44}>
+            <ReviewCard
+              reviewText="Wesele Wyspiański"
+              username="Projekt edukacyjny"
+              userImgUrl={User45Img}
+              userurl="//wyspianski.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={45}>
+            <ReviewCard
+              reviewText="Alkoholizm"
+              username="Projekt edukacyjny"
+              userImgUrl={User46Img}
+              userurl="//alkoholizm.netlify.app"
             />
           </StyledSlide>
         </Slider>
