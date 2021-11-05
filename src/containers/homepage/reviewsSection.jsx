@@ -59,6 +59,7 @@ import User45Img from "../../assets/pictures/wesele.jpg";
 import User46Img from "../../assets/pictures/alkohol.jpg";
 import User47Img from "../../assets/pictures/rosary.jpg";
 import User48Img from "../../assets/pictures/zin.jpg";
+import User49Img from "../../assets/pictures/tesla.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -138,7 +139,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={48}
+        totalSlides={49}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -525,6 +526,14 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User48Img}
               userurl="//wiktor-zin.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={48}>
+            <ReviewCard
+              reviewText="Nikola Tesla"
+              username="Projekt edukacyjny"
+              userImgUrl={User49Img}
+              userurl="//n-t.netlify.app"
             />
           </StyledSlide>
         </Slider>
