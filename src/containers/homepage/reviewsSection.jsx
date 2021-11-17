@@ -61,6 +61,8 @@ import User47Img from "../../assets/pictures/rosary.jpg";
 import User48Img from "../../assets/pictures/zin.jpg";
 import User49Img from "../../assets/pictures/tesla.jpg";
 import User50Img from "../../assets/pictures/banach.jpg";
+import User51Img from "../../assets/pictures/niepodl.jpg";
+import User52Img from "../../assets/pictures/western.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -140,7 +142,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={50}
+        totalSlides={52}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -543,6 +545,22 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User50Img}
               userurl="//stefan-banach.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={50}>
+            <ReviewCard
+              reviewText="Niepodległa"
+              username="Projekt edukacyjny"
+              userImgUrl={User51Img}
+              userurl="//niepodleglosc.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={51}>
+            <ReviewCard
+              reviewText="Western"
+              username="Projekt prywatny"
+              userImgUrl={User52Img}
+              userurl="//dziki-zachod.netlify.app"
             />
           </StyledSlide>
         </Slider>
