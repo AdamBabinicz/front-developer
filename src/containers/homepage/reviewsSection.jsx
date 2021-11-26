@@ -63,6 +63,9 @@ import User49Img from "../../assets/pictures/tesla.jpg";
 import User50Img from "../../assets/pictures/banach.jpg";
 import User51Img from "../../assets/pictures/niepodl.jpg";
 import User52Img from "../../assets/pictures/western.jpg";
+import User53Img from "../../assets/pictures/aleksander.jpg";
+import User54Img from "../../assets/pictures/rzym.jpg";
+import User55Img from "../../assets/pictures/barok.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -142,7 +145,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={52}
+        totalSlides={55}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -561,6 +564,30 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User52Img}
               userurl="//dziki-zachod.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={52}>
+            <ReviewCard
+              reviewText="Aleksander Wielki"
+              username="Projekt edukacyjny"
+              userImgUrl={User53Img}
+              userurl="//aleksander-wielki.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={53}>
+            <ReviewCard
+              reviewText="Starożytny Rzym"
+              username="Projekt edukacyjny"
+              userImgUrl={User54Img}
+              userurl="//dziki-zachod.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={54}>
+            <ReviewCard
+              reviewText="Barok w literaturze"
+              username="Projekt edukacyjny"
+              userImgUrl={User55Img}
+              userurl="//barok.netlify.app"
             />
           </StyledSlide>
         </Slider>
