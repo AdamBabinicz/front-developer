@@ -66,6 +66,7 @@ import User52Img from "../../assets/pictures/western.jpg";
 import User53Img from "../../assets/pictures/aleksander.jpg";
 import User54Img from "../../assets/pictures/rzym.jpg";
 import User55Img from "../../assets/pictures/barok.jpg";
+import User56Img from "../../assets/pictures/kochan.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -145,7 +146,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={55}
+        totalSlides={56}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -588,6 +589,14 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User55Img}
               userurl="//barok.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={55}>
+            <ReviewCard
+              reviewText="Renesans w literaturze"
+              username="Projekt edukacyjny"
+              userImgUrl={User56Img}
+              userurl="//jan-kochanowski.netlify.app"
             />
           </StyledSlide>
         </Slider>
