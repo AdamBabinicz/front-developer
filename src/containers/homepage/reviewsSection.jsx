@@ -67,6 +67,9 @@ import User53Img from "../../assets/pictures/aleksander.jpg";
 import User54Img from "../../assets/pictures/rzym.jpg";
 import User55Img from "../../assets/pictures/barok.jpg";
 import User56Img from "../../assets/pictures/kochan.jpg";
+import User57Img from "../../assets/pictures/oswiecenie.jpg";
+import User58Img from "../../assets/pictures/romantyzm.jpg";
+import User59Img from "../../assets/pictures/pozytywizm.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -146,7 +149,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={56}
+        totalSlides={59}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -597,6 +600,30 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User56Img}
               userurl="//jan-kochanowski.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={56}>
+            <ReviewCard
+              reviewText="Oświecenie w literaturze"
+              username="Projekt edukacyjny"
+              userImgUrl={User57Img}
+              userurl="//oswiecenie.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={57}>
+            <ReviewCard
+              reviewText="Romantyzm w literaturze"
+              username="Projekt edukacyjny"
+              userImgUrl={User58Img}
+              userurl="//romantyzm.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={58}>
+            <ReviewCard
+              reviewText="Pozytywizm w literaturze"
+              username="Projekt edukacyjny"
+              userImgUrl={User59Img}
+              userurl="//pozytywizm.netlify.app"
             />
           </StyledSlide>
         </Slider>
