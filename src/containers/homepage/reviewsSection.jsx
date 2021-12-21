@@ -70,6 +70,8 @@ import User56Img from "../../assets/pictures/kochan.jpg";
 import User57Img from "../../assets/pictures/oswiecenie.jpg";
 import User58Img from "../../assets/pictures/romantyzm.jpg";
 import User59Img from "../../assets/pictures/pozytywizm.jpg";
+import User60Img from "../../assets/pictures/m.polska.jpg";
+import User61Img from "../../assets/pictures/miedzy.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -149,7 +151,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={59}
+        totalSlides={61}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -624,6 +626,22 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User59Img}
               userurl="//pozytywizm.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={59}>
+            <ReviewCard
+              reviewText="Młoda Polska w literaturze"
+              username="Projekt edukacyjny"
+              userImgUrl={User60Img}
+              userurl="//mloda-polska.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={60}>
+            <ReviewCard
+              reviewText="Międzywojnie w literaturze"
+              username="Projekt edukacyjny"
+              userImgUrl={User61Img}
+              userurl="//miedzywojnie.netlify.app"
             />
           </StyledSlide>
         </Slider>
