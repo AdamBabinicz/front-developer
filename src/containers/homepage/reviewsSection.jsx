@@ -72,6 +72,7 @@ import User58Img from "../../assets/pictures/romantyzm.jpg";
 import User59Img from "../../assets/pictures/pozytywizm.jpg";
 import User60Img from "../../assets/pictures/m.polska.jpg";
 import User61Img from "../../assets/pictures/miedzy.jpg";
+import User62Img from "../../assets/pictures/okup.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -151,7 +152,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={61}
+        totalSlides={62}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -642,6 +643,14 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User61Img}
               userurl="//miedzywojnie.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={61}>
+            <ReviewCard
+              reviewText="Literatura okupacyjna"
+              username="Projekt edukacyjny"
+              userImgUrl={User62Img}
+              userurl="//okupacja.netlify.app"
             />
           </StyledSlide>
         </Slider>
