@@ -73,6 +73,7 @@ import User59Img from "../../assets/pictures/pozytywizm.jpg";
 import User60Img from "../../assets/pictures/m.polska.jpg";
 import User61Img from "../../assets/pictures/miedzy.jpg";
 import User62Img from "../../assets/pictures/okup.jpg";
+import User63Img from "../../assets/pictures/kmiecie.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -152,7 +153,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={62}
+        totalSlides={63}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -651,6 +652,14 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User62Img}
               userurl="//okupacja.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={62}>
+            <ReviewCard
+              reviewText="Wieś renesansowa"
+              username="Projekt edukacyjny"
+              userImgUrl={User63Img}
+              userurl="//kmiecie.netlify.app"
             />
           </StyledSlide>
         </Slider>
