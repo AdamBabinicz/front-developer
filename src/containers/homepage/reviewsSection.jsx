@@ -74,6 +74,8 @@ import User60Img from "../../assets/pictures/m.polska.jpg";
 import User61Img from "../../assets/pictures/miedzy.jpg";
 import User62Img from "../../assets/pictures/okup.jpg";
 import User63Img from "../../assets/pictures/kmiecie.jpg";
+import User64Img from "../../assets/pictures/panszczyzna.jpg";
+import User65Img from "../../assets/pictures/anne.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -153,7 +155,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={63}
+        totalSlides={65}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -660,6 +662,22 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User63Img}
               userurl="//kmiecie.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={63}>
+            <ReviewCard
+              reviewText="Pańszczyzna"
+              username="Projekt edukacyjny"
+              userImgUrl={User64Img}
+              userurl="//panszczyzna.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={64}>
+            <ReviewCard
+              reviewText="Anne Frank"
+              username="Projekt edukacyjny"
+              userImgUrl={User65Img}
+              userurl="//anne-frank.netlify.app"
             />
           </StyledSlide>
         </Slider>
