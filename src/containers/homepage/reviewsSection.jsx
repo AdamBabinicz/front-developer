@@ -78,6 +78,7 @@ import User64Img from "../../assets/pictures/panszczyzna.jpg";
 import User65Img from "../../assets/pictures/anne.jpg";
 import User66Img from "../../assets/pictures/zloto.jpg";
 import User67Img from "../../assets/pictures/glogier.jpg";
+import User68Img from "../../assets/pictures/dalajlama.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -157,7 +158,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={67}
+        totalSlides={68}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -696,6 +697,14 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User67Img}
               userurl="//glogier.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={67}>
+            <ReviewCard
+              reviewText="Dalajlama XIV"
+              username="Projekt edukacyjny"
+              userImgUrl={User68Img}
+              userurl="//dalajlama.netlify.app"
             />
           </StyledSlide>
         </Slider>
