@@ -82,6 +82,8 @@ import User68Img from "../../assets/pictures/dalajlama.jpg";
 import User69Img from "../../assets/pictures/potop.jpg";
 import User70Img from "../../assets/pictures/penrose.jpg";
 import User71Img from "../../assets/pictures/arka.jpg";
+import User72Img from "../../assets/pictures/chopin.jpg";
+import User73Img from "../../assets/pictures/pickwick.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -161,7 +163,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={71}
+        totalSlides={73}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -732,6 +734,22 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User71Img}
               userurl="//arka-przymierza.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={71}>
+            <ReviewCard
+              reviewText="Fryderyk Chopin"
+              username="Projekt edukacyjny"
+              userImgUrl={User72Img}
+              userurl="//fryderyk-chopin.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={72}>
+            <ReviewCard
+              reviewText="Klub Pickwicka"
+              username="Projekt edukacyjny"
+              userImgUrl={User73Img}
+              userurl="//pickwick.netlify.app"
             />
           </StyledSlide>
         </Slider>
