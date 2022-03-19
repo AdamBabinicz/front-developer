@@ -84,6 +84,9 @@ import User70Img from "../../assets/pictures/penrose.jpg";
 import User71Img from "../../assets/pictures/arka.jpg";
 import User72Img from "../../assets/pictures/chopin.jpg";
 import User73Img from "../../assets/pictures/pickwick.jpg";
+import User74Img from "../../assets/pictures/menuhin.jpg";
+import User75Img from "../../assets/pictures/kowalewski.jpg";
+import User76Img from "../../assets/pictures/zdanowska.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -150,7 +153,7 @@ const StyledDotGroup = styled(DotGroup)`
     }
   }
   .carousel__dot--selected {
-    background-color: ${theme.third};
+    background: ${theme.third};
   }
 `;
 
@@ -163,7 +166,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={73}
+        totalSlides={76}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -750,6 +753,30 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User73Img}
               userurl="//pickwick.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={73}>
+            <ReviewCard
+              reviewText="Yehudi Menuhin"
+              username="Projekt edukacyjny"
+              userImgUrl={User74Img}
+              userurl="//menuhin.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={74}>
+            <ReviewCard
+              reviewText="Jan Kowalewski"
+              username="Projekt edukacyjny"
+              userImgUrl={User75Img}
+              userurl="//kowalewski.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={75}>
+            <ReviewCard
+              reviewText="Julia Zdanowska"
+              username="Protest antywojenny"
+              userImgUrl={User76Img}
+              userurl="//zdanowska.netlify.app"
             />
           </StyledSlide>
         </Slider>
