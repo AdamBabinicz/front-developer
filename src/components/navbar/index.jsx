@@ -10,6 +10,7 @@ import { NavLink } from "react-router-dom";
 import { Element, scroller } from "react-scroll";
 import Popup from "../Popup";
 import img0 from "../../assets/pictures/glob.svg";
+import img1 from "../../assets/pictures/19.jpg";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -44,14 +45,15 @@ export function Navbar(props) {
   };
   const [buttonPopup, setButtonPopup] = useState(false);
   const [state] = useState({
-    title: "Ewa Gierczak-Kucharska",
+    title: "",
     img0: img0,
-    p0: "26-610 Radom, ul. Żeromskiego 95/97 m. 41",
-    p1: "NIP: 9482493499",
-    p2: "REGON: 147375476",
+    img1: img1,
+    p0: "",
+    p1: "",
+    p2: "",
     p3: "☎ 733 702 632",
     em0: "email: puaro@vp.pl",
-    mark: "Wystawiamy faktury bez VAT",
+    mark: "",
   });
 
   return (
@@ -79,6 +81,7 @@ export function Navbar(props) {
               {state.title}
             </h3>
             <img src={state.img0} alt="..." />
+            <img src={state.img1} alt="..." />
             <span style={{ fontSize: "16px", textAlign: "center" }}>
               {state.p0}
             </span>
