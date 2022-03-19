@@ -69,9 +69,8 @@ const Modal = () => {
             url: a-g.netlify.app.
           </p>
           <p>
-            Operatorem serwisu oraz Administratorem danych osobowych jest: Ewa
-            Gierczak-Kucharska, ul. Żeromskiego 95/97 m. 41, 26-610 Radom
-            (siedziba firmy).
+            Operatorem serwisu oraz Administratorem danych osobowych jest:
+            ................... (siedziba firmy).
           </p>
           <p>Adres kontaktowy poczty elektronicznej operatora: puaro@vp.pl.</p>
           <p>
