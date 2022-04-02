@@ -784,7 +784,7 @@ export function ReviewsSection(props) {
           <StyledSlide index={76}>
             <ReviewCard
               reviewText="Wołodymyr Zełeński"
-              username="Protest antywojenny"
+              username="Nowożytny Leonidas - szkic"
               userImgUrl={User77Img}
               userurl="//zelenski.netlify.app"
             />
