@@ -90,6 +90,7 @@ import User76Img from "../../assets/pictures/zdanowska.jpg";
 import User77Img from "../../assets/pictures/zelenski.jpg";
 import User78Img from "../../assets/pictures/zbrodnie.jpg";
 import User79Img from "../../assets/pictures/ofiary.jpg";
+import User80Img from "../../assets/pictures/stop-putin.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -169,7 +170,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={79}
+        totalSlides={80}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -804,6 +805,14 @@ export function ReviewsSection(props) {
               username="Protest antywojenny"
               userImgUrl={User79Img}
               userurl="//ofiary-putina.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={79}>
+            <ReviewCard
+              reviewText="Stop Putin!"
+              username="Protest antywojenny"
+              userImgUrl={User80Img}
+              userurl="//stop-putin.netlify.app"
             />
           </StyledSlide>
         </Slider>
