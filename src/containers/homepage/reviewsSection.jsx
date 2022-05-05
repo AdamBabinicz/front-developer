@@ -847,7 +847,7 @@ export function ReviewsSection(props) {
             <ReviewCard
               reviewText="Konstytucja 3 Maja"
               username="Projekt edukacyjny"
-              userImgUrl={User83Img}
+              userImgUrl={User84Img}
               userurl="//vivat-maj.netlify.app"
             />
           </StyledSlide>
