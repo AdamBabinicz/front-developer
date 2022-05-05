@@ -93,6 +93,8 @@ import User79Img from "../../assets/pictures/ofiary.jpg";
 import User80Img from "../../assets/pictures/stop-putin.jpg";
 import User81Img from "../../assets/pictures/krzyz.jpg";
 import User82Img from "../../assets/pictures/skrzypek.jpg";
+import User83Img from "../../assets/pictures/edyp.jpg";
+import User84Img from "../../assets/pictures/konstytucja.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -172,7 +174,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={82}
+        totalSlides={84}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -831,6 +833,22 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User82Img}
               userurl="//skrzypek-na-dachu.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={82}>
+            <ReviewCard
+              reviewText="Król Edyp"
+              username="Projekt edukacyjny"
+              userImgUrl={User83Img}
+              userurl="//edyp.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={83}>
+            <ReviewCard
+              reviewText="Konstytucja 3 Maja"
+              username="Projekt edukacyjny"
+              userImgUrl={User83Img}
+              userurl="//vivat-maj.netlify.app"
             />
           </StyledSlide>
         </Slider>
