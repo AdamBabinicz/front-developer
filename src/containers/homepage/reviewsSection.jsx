@@ -12,7 +12,7 @@ import { theme } from "../../theme";
 import { Link } from "react-router-dom";
 
 import User1Img from "../../assets/pictures/1b.jpg";
-import User2Img from "../../assets/pictures/2b.jpg";
+import User2Img from "../../assets/pictures/dziury.jpg";
 import User3Img from "../../assets/pictures/3b.jpg";
 import User4Img from "../../assets/pictures/4b.jpg";
 import User5Img from "../../assets/pictures/5b.jpg";
@@ -95,6 +95,7 @@ import User81Img from "../../assets/pictures/krzyz.jpg";
 import User82Img from "../../assets/pictures/skrzypek.jpg";
 import User83Img from "../../assets/pictures/edyp.jpg";
 import User84Img from "../../assets/pictures/konstytucja.jpg";
+import User85Img from "../../assets/pictures/mazurzyn.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -174,7 +175,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={84}
+        totalSlides={85}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -189,10 +190,10 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={1}>
             <ReviewCard
-              reviewText="Słodkolandia wita:"
-              username="Firma eventowa"
+              reviewText="Czarne dziury"
+              username="Projekt edukacyjny"
               userImgUrl={User2Img}
-              userurl="//www.dmuchance.slodkolandia.cba.pl"
+              userurl="//czarne-dziury.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={2}>
@@ -849,6 +850,14 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User84Img}
               userurl="//vivat-maj.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={84}>
+            <ReviewCard
+              reviewText="Teofil Lenartowicz"
+              username="Projekt edukacyjny"
+              userImgUrl={User85Img}
+              userurl="//mazurzyn.netlify.app"
             />
           </StyledSlide>
         </Slider>
