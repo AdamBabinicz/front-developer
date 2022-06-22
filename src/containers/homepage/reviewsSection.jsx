@@ -893,3 +893,5 @@ export function ReviewsSection(props) {
     </ReviewsContainer>
   );
 }
+
+// zmiany
