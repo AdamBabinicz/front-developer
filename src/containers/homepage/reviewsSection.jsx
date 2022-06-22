@@ -98,6 +98,7 @@ import User84Img from "../../assets/pictures/konstytucja.jpg";
 import User85Img from "../../assets/pictures/mazurzyn.jpg";
 import User86Img from "../../assets/pictures/trela.jpg";
 import User87Img from "../../assets/pictures/asperger.jpg";
+import User88Img from "../../assets/pictures/elzbietanki.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -177,7 +178,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={87}
+        totalSlides={88}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -876,6 +877,14 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User87Img}
               userurl="//asperger.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={87}>
+            <ReviewCard
+              reviewText="Męczennice elżbietańskie"
+              username="Projekt edukacyjny"
+              userImgUrl={User88Img}
+              userurl="//elzbietanki.netlify.app"
             />
           </StyledSlide>
         </Slider>
