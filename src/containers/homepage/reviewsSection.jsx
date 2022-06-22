@@ -894,4 +894,4 @@ export function ReviewsSection(props) {
   );
 }
 
-// zmiany
+// zmiany po zmianach
