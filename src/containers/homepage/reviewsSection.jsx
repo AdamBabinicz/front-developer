@@ -102,6 +102,8 @@ import User88Img from "../../assets/pictures/elzbietanki.jpg";
 import User89Img from "../../assets/pictures/nataniel.jpg";
 import User90Img from "../../assets/pictures/aktywny.jpg";
 import User91Img from "../../assets/pictures/kaku.jpg";
+import User92Img from "../../assets/pictures/wolyn.jpg";
+import User93Img from "../../assets/pictures/stanko.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -181,7 +183,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={91}
+        totalSlides={93}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -912,6 +914,22 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User91Img}
               userurl="//michio-kaku.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={91}>
+            <ReviewCard
+              reviewText="Wołyń 1943-1945"
+              username="Projekt edukacyjny"
+              userImgUrl={User92Img}
+              userurl="//wolyn.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={92}>
+            <ReviewCard
+              reviewText="Tomasz Stańko"
+              username="Projekt prywatny"
+              userImgUrl={User93Img}
+              userurl="//tomasz-stanko.netlify.app"
             />
           </StyledSlide>
         </Slider>
