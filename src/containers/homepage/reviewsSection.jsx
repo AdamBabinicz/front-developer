@@ -105,6 +105,7 @@ import User91Img from "../../assets/pictures/kaku.jpg";
 import User92Img from "../../assets/pictures/wolyn.jpg";
 import User93Img from "../../assets/pictures/stanko.jpg";
 import User94Img from "../../assets/pictures/herbert.jpg";
+import User95Img from "../../assets/pictures/turing.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -184,7 +185,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={94}
+        totalSlides={95}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
