@@ -947,7 +947,7 @@ export function ReviewsSection(props) {
               reviewText="Alan Turing"
               username="Projekt edukacyjny"
               userImgUrl={User95Img}
-              userurl="//alan-mathis-turing.netlify.app"
+              userurl="//alan-mathison-turing.netlify.app"
             />
           </StyledSlide>
         </Slider>
