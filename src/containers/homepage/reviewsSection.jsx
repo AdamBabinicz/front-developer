@@ -941,6 +941,14 @@ export function ReviewsSection(props) {
               userurl="//zbigniew-herbert.netlify.app"
             />
           </StyledSlide>
+          <StyledSlide index={94}>
+            <ReviewCard
+              reviewText="Alan Turing"
+              username="Projekt edukacyjny"
+              userImgUrl={User95Img}
+              userurl="//alan-mathis-turing.netlify.app"
+            />
+          </StyledSlide>
         </Slider>
         <StyledDotGroup />
       </StyledCarouselProvider>
