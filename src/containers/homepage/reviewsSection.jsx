@@ -108,6 +108,8 @@ import User94Img from "../../assets/pictures/herbert.jpg";
 import User95Img from "../../assets/pictures/turing.jpg";
 import User96Img from "../../assets/pictures/bog.jpg";
 import User97Img from "../../assets/pictures/jennifer.jpg";
+import User98Img from "../../assets/pictures/elzbieta.jpg";
+import User99Img from "../../assets/pictures/kosz.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -187,7 +189,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={97}
+        totalSlides={99}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -966,6 +968,22 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User97Img}
               userurl="//jennifer-fulwiler.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={97}>
+            <ReviewCard
+              reviewText="Królowa Elżbieta II"
+              username="Projekt edukacyjny"
+              userImgUrl={User98Img}
+              userurl="//elzbieta.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={98}>
+            <ReviewCard
+              reviewText="Mieczysław Kosz"
+              username="Projekt edukacyjny"
+              userImgUrl={User99Img}
+              userurl="//kosz.netlify.app"
             />
           </StyledSlide>
         </Slider>
