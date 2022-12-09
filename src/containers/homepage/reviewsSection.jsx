@@ -159,6 +159,10 @@ const StyledDotGroup = styled(DotGroup)`
     margin-top: 2.5rem;
     /* position: absolute; */
     margin-bottom: 5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
   }
 
   @media screen and (max-width: 480px) {
@@ -177,6 +181,11 @@ const StyledDotGroup = styled(DotGroup)`
       margin-right: 3px;
     }
   }
+
+  /* .carousel__dot {
+    @media screen and (max-width: 768px) {
+    }
+  } */
   .carousel__dot--selected {
     background: ${theme.third};
   }
