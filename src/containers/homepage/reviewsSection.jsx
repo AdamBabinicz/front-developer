@@ -266,7 +266,7 @@ export function ReviewsSection(props) {
               reviewText="Roszada"
               username="UKS Radom"
               userImgUrl={User8Img}
-              userurl="//roszada.radom.pl"
+              userurl="//www.roszada.radom.pl"
             />
           </StyledSlide>
           <StyledSlide index={8}>
