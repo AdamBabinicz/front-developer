@@ -112,6 +112,8 @@ import User98Img from "../../assets/pictures/elzbieta.jpg";
 import User99Img from "../../assets/pictures/kosz.jpg";
 import User100Img from "../../assets/pictures/sidis.jpg";
 import User101Img from "../../assets/pictures/rodzinnie.jpg";
+import User102Img from "../../assets/pictures/kobiela.jpg";
+import User103Img from "../../assets/pictures/falski.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -200,7 +202,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={101}
+        totalSlides={103}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1011,6 +1013,22 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User101Img}
               userurl="//rodzinnie.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={101}>
+            <ReviewCard
+              reviewText="Bogumił Kobiela"
+              username="Projekt prywatny"
+              userImgUrl={User102Img}
+              userurl="//kobiela.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={102}>
+            <ReviewCard
+              reviewText="Elementarz Falskiego"
+              username="Projekt prywatny"
+              userImgUrl={User103Img}
+              userurl="//falski.netlify.app"
             />
           </StyledSlide>
         </Slider>
