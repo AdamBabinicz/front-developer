@@ -114,6 +114,9 @@ import User100Img from "../../assets/pictures/sidis.jpg";
 import User101Img from "../../assets/pictures/rodzinnie.jpg";
 import User102Img from "../../assets/pictures/kobiela.jpg";
 import User103Img from "../../assets/pictures/falski.jpg";
+import User104Img from "../../assets/pictures/korepetycje.jpg";
+import User105Img from "../../assets/pictures/ania.jpg";
+import User106Img from "../../assets/pictures/habitat.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -202,7 +205,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={103}
+        totalSlides={106}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1029,6 +1032,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User103Img}
               userurl="//falski.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={103}>
+            <ReviewCard
+              reviewText="Korepetycje z matematyki"
+              username="RAF-EDU"
+              userImgUrl={User104Img}
+              userurl="//korepetycje.netlify.app"
             />
           </StyledSlide>
         </Slider>
