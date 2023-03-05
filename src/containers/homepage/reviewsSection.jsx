@@ -1042,6 +1042,22 @@ export function ReviewsSection(props) {
               userurl="//korepetycje.netlify.app"
             />
           </StyledSlide>
+          <StyledSlide index={104}>
+            <ReviewCard
+              reviewText="Ania"
+              username="Projekt prywatny"
+              userImgUrl={User105Img}
+              userurl="//ania-z.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={105}>
+            <ReviewCard
+              reviewText="Habitat Nataniela"
+              username="Projekt prywatny"
+              userImgUrl={User106Img}
+              userurl="//habitat-nat.netlify.app"
+            />
+          </StyledSlide>
         </Slider>
         <StyledDotGroup />
       </StyledCarouselProvider>
