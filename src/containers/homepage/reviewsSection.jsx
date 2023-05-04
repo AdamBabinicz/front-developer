@@ -1064,7 +1064,7 @@ export function ReviewsSection(props) {
               reviewText="Blog o Natanielku"
               username="Projekt prywatny"
               userImgUrl={User107Img}
-              userurl="//blog-nataniel.netlify.app"
+              userurl="//nataniel.onrender.com"
             />
           </StyledSlide>
         </Slider>
