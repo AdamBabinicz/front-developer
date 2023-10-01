@@ -640,7 +640,7 @@ export function ReviewsSection(props) {
               reviewText="Starożytny Rzym"
               username="Projekt edukacyjny"
               userImgUrl={User54Img}
-              userurl="//dziki-zachod.netlify.app"
+              userurl="//rzym.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={54}>
