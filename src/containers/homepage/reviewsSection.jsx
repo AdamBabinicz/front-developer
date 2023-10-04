@@ -384,7 +384,7 @@ export function ReviewsSection(props) {
               reviewText="Monika Knapczyk"
               username="Pisarka, wydawca, blogerka"
               userImgUrl={User22Img}
-              userurl="//monika-knapczyk.netlify.app"
+              userurl="//m-knapczyk.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={22}>
