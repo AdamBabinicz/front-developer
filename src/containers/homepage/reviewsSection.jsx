@@ -9,7 +9,6 @@ import { useMediaQuery } from "react-responsive";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import BackgroundImg from "../../assets/pictures/key-b.jpg";
 import { theme } from "../../theme";
-// import { Link } from "react-router-dom";
 
 import User1Img from "../../assets/pictures/1b.jpg";
 import User2Img from "../../assets/pictures/dziury.jpg";
@@ -160,6 +159,11 @@ const StyledDotGroup = styled(DotGroup)`
   justify-content: center;
   align-items: center;
   width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: center;
 
   @media screen and (max-width: 768px) {
     margin-top: 2.5rem;
@@ -1071,7 +1075,7 @@ export function ReviewsSection(props) {
             />
           </StyledSlide>
         </Slider>
-        {/* <StyledDotGroup /> */}
+        <StyledDotGroup />
       </StyledCarouselProvider>
     </ReviewsContainer>
   );

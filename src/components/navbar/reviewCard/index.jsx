@@ -33,12 +33,12 @@ const CardContainer = styled.div`
 
 const QuoteIcon = styled.div`
   position: absolute;
-  top: 13px;
-  left: 17px;
-  font-size: 35px;
+  top: 5px;
+  left: 13px;
+  font-size: 25px;
   text-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72);
   cursor: pointer;
-  z-index: 1;
+  z-index: 1000;
 
   a {
     transition: all 0.3s ease-in-out;
