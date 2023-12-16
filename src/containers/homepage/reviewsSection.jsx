@@ -155,9 +155,9 @@ const StyledSlide = styled(Slide)`
 const StyledDotGroup = styled(DotGroup)`
   margin-top: 3rem;
   margin-bottom: 3rem;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   width: 100%;
   display: -webkit-box;
   -webkit-line-clamp: 3;
