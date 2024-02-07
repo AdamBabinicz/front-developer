@@ -117,6 +117,7 @@ import User104Img from "../../assets/pictures/korepetycje.jpg";
 import User105Img from "../../assets/pictures/ania.jpg";
 import User106Img from "../../assets/pictures/habitat.jpg";
 import User107Img from "../../assets/pictures/blog-natanka.jpg";
+import User108Img from "../../assets/pictures/wartosci.jpg";
 
 const ReviewsContainer = styled(Element)`
   height: 100vh;
@@ -213,7 +214,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={107}
+        totalSlides={108}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1072,6 +1073,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User107Img}
               userurl="//nataniel.onrender.com"
+            />
+          </StyledSlide>
+          <StyledSlide index={107}>
+            <ReviewCard
+              reviewText="Fundacja 'wARTości'"
+              username="Projekt publiczny"
+              userImgUrl={User108Img}
+              userurl="//fundacja.netlify.app"
             />
           </StyledSlide>
         </Slider>
