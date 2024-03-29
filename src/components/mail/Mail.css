@@ -47,6 +47,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 article,
 aside,
@@ -5952,6 +5953,7 @@ a.close.disabled {
 }
 .carousel {
   position: relative;
+  overflow: hidden;
 }
 .carousel.pointer-event {
   -ms-touch-action: pan-y;
@@ -5959,8 +5961,9 @@ a.close.disabled {
 }
 .carousel-inner {
   position: relative;
-  width: 100%;
-  overflow: hidden;
+  width: 1000%;
+  /* width: 100%; */
+  /* overflow: hidden; */
 }
 .carousel-inner::after {
   display: block;
@@ -5970,8 +5973,10 @@ a.close.disabled {
 .carousel-item {
   position: relative;
   display: none;
-  float: left;
-  width: 100%;
+  /* float: left; */
+  display: inline-block;
+  /* width: 100%; */
+  width: 10%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
