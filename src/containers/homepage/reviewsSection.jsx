@@ -132,8 +132,9 @@ const ReviewsContainer = styled(Element)`
 
   @media screen and (max-width: 480px) {
     /* min-height: 600px; */
-    min-height: fit-content;
+    height: fit-content;
     justify-content: space-around;
+    background: red;
   }
 `;
 
