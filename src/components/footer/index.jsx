@@ -284,7 +284,7 @@ export function Footer(props) {
 
             <Popup
               trigger={
-                <LinkExt className="button">
+                <LinkExt to="#" className="button">
                   <FontAwesomeIcon icon={faCode} />
                 </LinkExt>
               }
