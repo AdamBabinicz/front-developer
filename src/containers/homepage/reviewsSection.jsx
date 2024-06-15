@@ -212,7 +212,7 @@ export function ReviewsSection(props) {
   return (
     <ReviewsContainer name="project">
       <SectionTitle>Realizacje</SectionTitle>
-      <Marginer direction="vertical" margin="3em" />
+      <Marginer direction="vertical" />
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}

@@ -16,17 +16,17 @@ const CardContainer = styled.div`
   padding: 10px 1.2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 
   @media screen and (max-width: 768px) {
     padding: 0;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
 
   @media screen and (max-width: 480px) {
     max-height: 300px;
-    width: 80%;
+    /* width: 80%; */
     margin: 0;
   }
 `;
@@ -72,6 +72,7 @@ const ReviewText = styled.p`
   justify-content: center;
   text-align: center;
   text-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72);
+  text-wrap: balance;
 
   /* @media screen and (max-width: 1100px) {
     font-size: 20px;
