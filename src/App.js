@@ -6,6 +6,7 @@ import Modal from "./components/modal/Modal";
 import Mail from "./components/mail/Mail";
 import ScrollToTop from "./components/ScrollToTop";
 import Thank from "./components/mail/Thank";
+import ScrollButton from "./components/ScrollButton";
 
 function App(props) {
   return (
@@ -18,6 +19,7 @@ function App(props) {
         <Route path="/kontakt-mailowy" component={Mail} exact />
         <Route path="/dziekujemy-za-wiadomosc" component={Thank} exact />
       </Switch>
+      <ScrollButton />
     </Router>
   );
 }
