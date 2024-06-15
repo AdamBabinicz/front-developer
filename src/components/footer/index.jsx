@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import BackgroundImg from "../../assets/pictures/codeb.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../button";
@@ -30,7 +30,6 @@ import { Link } from "react-router-dom";
 import { scroller } from "react-scroll";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-import FooterElements from "./FooterElements.css";
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -54,13 +53,13 @@ const MotivationalText = styled.h3`
     font-size: 18px;
   }
 `;
-const Line = styled.span`
-  min-width: 100%;
-  min-height: 1px;
-  margin-bottom: 2em;
-  background: ${theme.primary};
-  display: flex;
-`;
+// const Line = styled.span`
+//   min-width: 100%;
+//   min-height: 1px;
+//   margin-bottom: 2em;
+//   background: ${theme.primary};
+//   display: flex;
+// `;
 const AccessibilityContainer = styled.div`
   display: flex;
   width: 80%;
@@ -131,35 +130,35 @@ const RightsReserved = styled.div`
   color: ${theme.primary};
   font-size: 12px;
 `;
-const ModalContainer = styled.div`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: ${theme.sixth};
-  padding: 50px;
-  z-index: 1000;
-  width: 50%;
-  height: 50%;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
-  pointer-events: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+// const ModalContainer = styled.div`
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   background: ${theme.sixth};
+//   padding: 50px;
+//   z-index: 1000;
+//   width: 50%;
+//   height: 50%;
+//   transition: all 0.3s ease-in-out;
+//   box-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.2);
+//   border-radius: 0.3rem;
+//   pointer-events: none;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
 
-  /* @media screen and (max-width: 678px) {
-    min-width: 100%;
-    background: red;
-  } */
+//   /* @media screen and (max-width: 678px) {
+//     min-width: 100%;
+//     background: red;
+//   } */
 
-  p {
-    color: ${theme.secondary};
-    text-align: center;
-  }
-`;
+//   p {
+//     color: ${theme.secondary};
+//     text-align: center;
+//   }
+// `;
 const Skills = styled.div`
   color: ${theme.secondary};
   display: grid;
