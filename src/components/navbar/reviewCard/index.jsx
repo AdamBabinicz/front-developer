@@ -84,6 +84,7 @@ const ReviewText = styled.p`
 
   @media screen and (max-width: 480px) {
     font-size: 28px;
+    margin-top: 1rem;
   }
 `;
 

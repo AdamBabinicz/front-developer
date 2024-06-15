@@ -131,7 +131,8 @@ const ReviewsContainer = styled(Element)`
     url(${BackgroundImg}) center/cover no-repeat fixed;
 
   @media screen and (max-width: 480px) {
-    min-height: 600px;
+    /* min-height: 600px; */
+    min-height: fit-content;
     justify-content: space-around;
   }
 `;
