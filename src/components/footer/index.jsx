@@ -335,7 +335,7 @@ export function Footer(props) {
                   </Content>
                   <Actions>
                     <Popup
-                      trigger={<Button>więcej</Button>}
+                      trigger={<Button>więcej c</Button>}
                       position="contain"
                       nested
                       modal

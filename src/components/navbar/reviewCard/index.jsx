@@ -124,6 +124,10 @@ const UserImg = styled.img`
 
   @media screen and (max-width: 480px) {
     width: 165px;
+    max-width: 100%; /* Dodanie maksymalnej szerokości */
+    max-height: 185px; /* Dodanie maksymalnej wysokości */
+    object-fit: cover;
+    margin-left: 20px;
   }
 `;
 
