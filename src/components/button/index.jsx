@@ -32,6 +32,9 @@ const ButtonWrapper = styled.button`
       border-radius: 50%;
       color: #00000096;
       outline: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     `};
 `;
 
