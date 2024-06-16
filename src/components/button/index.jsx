@@ -31,7 +31,6 @@ const ButtonWrapper = styled.button`
       background: rgb(253, 253, 253);
       border-radius: 50%;
       color: #00000096;
-      color: black;
       outline: none;
       display: flex;
       justify-content: center;
@@ -40,6 +39,13 @@ const ButtonWrapper = styled.button`
     `};
 `;
 
-export function Button(props) {
-  return <ButtonWrapper {...props}>{props.children}</ButtonWrapper>;
-}
+// export function Button(props) {
+//   return <ButtonWrapper {...props}>{props.children}</ButtonWrapper>;
+// }
+export const Button = React.forwardRef((props, ref) => {
+  return (
+    <ButtonWrapper ref={ref} {...props}>
+      {props.children}
+    </ButtonWrapper>
+  );
+});

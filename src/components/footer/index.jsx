@@ -32,6 +32,8 @@ import { scroller } from "react-scroll";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
+const ref = React.createRef();
+
 const FooterContainer = styled.div`
   width: 100%;
   height: 500px;
@@ -327,7 +329,7 @@ export function Footer(props) {
                       nested
                       modal
                     >
-                      {(closeNested) => (
+                      {(close) => (
                         <SpanText>
                           Języki programowania stosowane w naszych projektach
                           {/* <Button
