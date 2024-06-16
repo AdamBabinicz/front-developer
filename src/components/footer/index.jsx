@@ -240,10 +240,11 @@ const SpanText = styled.div`
   background: rgba(0, 0, 0, 0.582);
   color: rgba(255, 255, 255, 0.588);
   text-align: center;
-  height: 230px;
+  height: 235px;
 
   @media screen and (max-width: 480px) {
     padding: 0 1rem;
+    height: 220px;
   }
 `;
 
