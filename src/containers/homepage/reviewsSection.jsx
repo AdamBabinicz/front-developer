@@ -176,13 +176,14 @@ const StyledDotGroup = styled(DotGroup)`
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   @media screen and (max-width: 480px) {
     margin-top: 0;
     /* position: absolute; */
     bottom: 1rem;
+    overflow: visible;
   }
   button {
     width: 11px;
