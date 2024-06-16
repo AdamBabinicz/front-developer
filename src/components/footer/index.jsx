@@ -238,6 +238,10 @@ const SpanText = styled.div`
   color: rgba(255, 255, 255, 0.588);
   text-align: center;
   height: 235px;
+
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
+  }
 `;
 
 export function Footer(props) {
