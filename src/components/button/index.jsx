@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { theme } from "../../theme";
 
 const ButtonWrapper = styled.button`
-  padding: ${({ small }) => (small ? "8px" : "15px")};
+  padding: ${({ small }) => (small ? "5px 8px" : "7px 15px")};
   border-radius: 5px;
   background: ${theme.primary};
   color: ${theme.secondary};
@@ -36,6 +36,7 @@ const ButtonWrapper = styled.button`
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: ${({ small }) => (small ? "8px" : "15px")};
     `};
 `;
 
