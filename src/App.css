@@ -38,8 +38,8 @@
   }
 }
 .popup-content {
-  padding: 0;
-  border: none;
+  padding: 0 !important;
+  border: none !important;
 }
 @media screen and (max-width: 480px) {
   .popup-content {
