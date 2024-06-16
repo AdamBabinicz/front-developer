@@ -6,6 +6,7 @@ import { Button } from "../button";
 import { Logo } from "../logo";
 import { Marginer } from "../navbar/marginer";
 import { theme } from "../../theme";
+import { FaTimes } from "react-icons/fa";
 import {
   faTwitter,
   faGoogle,
@@ -337,7 +338,7 @@ export function Footer(props) {
                             zamknij
                           </Button> */}
                           <Button smallB onClick={close}>
-                            &times;
+                            <FaTimes />
                           </Button>
                         </SpanText>
                       )}
