@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import BackgroundImg from "../../assets/pictures/codeb.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../button";
@@ -41,6 +41,7 @@ const FooterContainer = styled.div`
   align-items: center;
   position: relative;
 `;
+
 const MotivationalText = styled.h3`
   font-size: 25px;
   font-weight: 400;
@@ -53,13 +54,7 @@ const MotivationalText = styled.h3`
     font-size: 18px;
   }
 `;
-// const Line = styled.span`
-//   min-width: 100%;
-//   min-height: 1px;
-//   margin-bottom: 2em;
-//   background: ${theme.primary};
-//   display: flex;
-// `;
+
 const AccessibilityContainer = styled.div`
   display: flex;
   width: 80%;
@@ -76,12 +71,15 @@ const AccessibilityContainer = styled.div`
     padding-right: 8px;
   }
 `;
+
 const PrivacyContainer = styled.div`
   display: flex;
 `;
+
 const SocialContainer = styled.div`
   display: flex;
 `;
+
 const SocialIcon = styled.div`
   color: ${theme.primary};
   font-size: 20px;
@@ -95,13 +93,16 @@ const SocialIcon = styled.div`
       margin-right: 20px;
     }
   }
+
   @media screen and (max-width: 480px) {
     font-size: 18px;
   }
+
   &:hover {
     color: ${theme.third};
   }
 `;
+
 const LinkExt = styled(Link)`
   color: ${theme.primary};
   transition: all 0.3s ease-in-out;
@@ -115,13 +116,16 @@ const LinkExt = styled(Link)`
       margin-right: 20px;
     }
   }
+
   @media screen and (max-width: 480px) {
     font-size: 20px;
   }
+
   &:hover {
     color: ${theme.third};
   }
 `;
+
 const RightsReserved = styled.div`
   position: absolute;
   bottom: 8px;
@@ -130,35 +134,7 @@ const RightsReserved = styled.div`
   color: ${theme.primary};
   font-size: 12px;
 `;
-// const ModalContainer = styled.div`
-//   position: fixed;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   background: ${theme.sixth};
-//   padding: 50px;
-//   z-index: 1000;
-//   width: 50%;
-//   height: 50%;
-//   transition: all 0.3s ease-in-out;
-//   box-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.2);
-//   border-radius: 0.3rem;
-//   pointer-events: none;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
 
-//   /* @media screen and (max-width: 678px) {
-//     min-width: 100%;
-//     background: red;
-//   } */
-
-//   p {
-//     color: ${theme.secondary};
-//     text-align: center;
-//   }
-// `;
 const Skills = styled.div`
   color: ${theme.secondary};
   display: grid;
@@ -182,9 +158,42 @@ const SpanSkill = styled.div`
   }
 `;
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
+
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+`;
+
 const Modal = styled.div`
   font-size: 12px;
   color: rgb(233, 233, 233);
+
+  &.popup-content {
+    background: rgba(0, 0, 0, 0.9);
+    border: none;
+    border-radius: 10px;
+    animation: ${fadeIn} 0.3s ease-in-out;
+  }
+
+  &.popup-content-exit {
+    animation: ${fadeOut} 0.3s ease-in-out;
+  }
 
   button {
     background: ${theme.secondary};
@@ -224,36 +233,17 @@ const SpanText = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  flex-direction: column;
   background: rgba(0, 0, 0, 0.582);
   color: rgba(255, 255, 255, 0.588);
   text-align: center;
-  width: 70%;
-  height: 200px;
-  margin: 0 auto;
+  height: 235px;
 `;
 
 export function Footer(props) {
   const scrollToAbout = () => {
     scroller.scrollTo("about", { smooth: true, duration: 1500 });
   };
-
-  // const outside = useRef();
-  // const [isOpen, setIsOpen] = useState(false);
-  // const handleClick = (e) => {
-  //   if (outside.current.contains(e.target)) {
-  //     return;
-  //   }
-  //   setIsOpen(false);
-  // };
-
-  // useEffect(() => {
-  //   const getClick = document.addEventListener("click", handleClick);
-
-  //   return () => {
-  //     getClick();
-  //   };
-  // }, []);
 
   return (
     <>
@@ -274,14 +264,6 @@ export function Footer(props) {
               <FontAwesomeIcon icon={faEnvelope} />
             </LinkExt>
 
-            {/* <LinkExt> */}
-            {/* <FontAwesomeIcon
-                icon={faCode}
-                trigger={<button className="button"> </button>}
-                modal
-                nested
-              /> */}
-
             <Popup
               trigger={
                 <LinkExt to="#" className="button">
@@ -290,12 +272,12 @@ export function Footer(props) {
               }
               modal
               nested
+              contentStyle={{ animation: "fadeIn 0.3s ease-in-out" }}
+              overlayStyle={{ animation: "fadeIn 0.3s ease-in-out" }}
+              closeOnDocumentClick
             >
               {(close) => (
                 <Modal>
-                  <Button smallB onClick={close}>
-                    &times;
-                  </Button>
                   <Header>
                     <FontAwesomeIcon icon={faCode} />
                   </Header>
@@ -335,14 +317,26 @@ export function Footer(props) {
                   </Content>
                   <Actions>
                     <Popup
-                      trigger={<Button>więcej c</Button>}
+                      trigger={<Button>więcej</Button>}
                       position="contain"
                       nested
                       modal
                     >
-                      <SpanText>
-                        Języki programowania stosowane w naszych projektach
-                      </SpanText>
+                      {(closeNested) => (
+                        <SpanText>
+                          Języki programowania stosowane w naszych projektach
+                          {/* <Button
+                            onClick={() => {
+                              closeNested();
+                            }}
+                          >
+                            zamknij
+                          </Button> */}
+                          <Button smallB onClick={close}>
+                            &times;
+                          </Button>
+                        </SpanText>
+                      )}
                     </Popup>
                     <Button
                       onClick={() => {
@@ -356,44 +350,7 @@ export function Footer(props) {
               )}
             </Popup>
 
-            {/* <ModalContainer>
-                <p>
-                  <FontAwesomeIcon icon={faCode} />
-                </p>
-                <Skills>
-                  <span>
-                    <FontAwesomeIcon icon={faHtml5} />
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faCss3} />
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faSass} />
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faGit} />
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faGithub} />
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faJs} />
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faReact} />
-                  </span>
-                  <span>
-                    <FontAwesomeIcon icon={faPhp} />
-                  </span>
-                </Skills>
-              </ModalContainer> */}
-
-            <LinkExt
-              to="/polityka-prywatnosci"
-              // rel="noopener noreferrer"
-              // target="_blank"
-              // aria-label="RODO"
-            >
+            <LinkExt to="/polityka-prywatnosci">
               <FontAwesomeIcon icon={faUserSecret} />
             </LinkExt>
           </PrivacyContainer>

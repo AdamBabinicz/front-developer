@@ -136,7 +136,7 @@ const Username = styled.span`
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: ${theme.primary};
   margin-left: 0.5rem;
-
+  margin-right: 0.5rem;
   /* @media screen and (max-width: 1100px) {
     font-size: 15px;
   } */

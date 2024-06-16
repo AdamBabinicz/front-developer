@@ -37,3 +37,12 @@
     transform: rotate(360deg);
   }
 }
+.popup-content {
+  padding: 0;
+  border: none;
+}
+@media screen and (max-width: 480px) {
+  .popup-content {
+    width: 90% !important;
+  }
+}
