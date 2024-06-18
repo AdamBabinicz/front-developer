@@ -333,13 +333,6 @@ export function Footer(props) {
                       {(close) => (
                         <SpanText>
                           Języki programowania stosowane w naszych projektach
-                          {/* <Button
-                            onClick={() => {
-                              closeNested();
-                            }}
-                          >
-                            zamknij
-                          </Button> */}
                           <Button smallB onClick={close}>
                             <FaTimes />
                           </Button>
