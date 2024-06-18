@@ -175,6 +175,7 @@ const StyledDotGroup = styled(DotGroup)`
   }
 
   @media screen and (max-width: 480px) {
+    margin: 3rem 0 0;
     /* top: 20rem; */
     /* background: orange; */
   }
