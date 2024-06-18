@@ -70,7 +70,7 @@ const Modal = () => {
           </p>
           <p>
             Operatorem serwisu oraz Administratorem danych osobowych jest:
-            ................... (siedziba firmy).
+            ................ (siedziba firmy).
           </p>
           <p>Adres kontaktowy poczty elektronicznej operatora: puaro@vp.pl.</p>
           <p>

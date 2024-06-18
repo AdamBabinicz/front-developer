@@ -122,18 +122,16 @@ import User109Img from "../../assets/pictures/niedzwiecki.jpg";
 import User110Img from "../../assets/pictures/natek.jpg";
 
 const ReviewsContainer = styled(Element)`
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url(${BackgroundImg}) center/cover no-repeat fixed;
+  /* height: 100vh; */
 
   @media screen and (max-width: 480px) {
-    /* min-height: 600px; */
-    height: fit-content;
-    /* justify-content: space-around; */
+    justify-content: space-around;
   }
 `;
 
@@ -143,6 +141,7 @@ const StyledCarouselProvider = styled(CarouselProvider)`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    margin-top: 3rem;
   }
 `;
 const StyledSlide = styled(Slide)`
@@ -157,14 +156,14 @@ const StyledSlide = styled(Slide)`
 `;
 
 const StyledDotGroup = styled(DotGroup)`
-  margin-top: 3rem;
+  margin-top: -5rem;
   margin-bottom: 3rem;
   /* display: flex;
   justify-content: center;
   align-items: center; */
   width: 100%;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  /* -webkit-line-clamp: 3; */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-align: center;
@@ -176,14 +175,14 @@ const StyledDotGroup = styled(DotGroup)`
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 
   @media screen and (max-width: 480px) {
-    margin-top: 0;
+    margin-top: -9rem;
     /* position: absolute; */
-    bottom: 1rem;
-    overflow: visible;
+    margin-bottom: 2rem;
+    overflow: hidden;
   }
   button {
     width: 11px;
@@ -401,7 +400,7 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={22}>
             <ReviewCard
-              reviewText="Mapa życiowa ..."
+              reviewText="Mapa życiowa"
               username="Projekt prywatny"
               userImgUrl={User23Img}
               userurl="//droga.netlify.app"

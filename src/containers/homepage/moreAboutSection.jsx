@@ -65,7 +65,7 @@ export function MoreAboutSection(props) {
           nowych Klientów, przyciągając ich wartościową stylistyką i
           przemawiającą do wyobraźni ofertą!
         </AboutText>
-        <AboutImg src={AboutImgUrl} alt="..."></AboutImg>
+        <AboutImg src={AboutImgUrl} alt="obraz"></AboutImg>
       </AboutContainer>
     </MoreAboutContainer>
   );
