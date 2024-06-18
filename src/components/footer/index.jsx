@@ -21,6 +21,7 @@ import {
   faJs,
   faBootstrap,
   faNode,
+  faMdb,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
@@ -31,6 +32,12 @@ import { Link } from "react-router-dom";
 import { scroller } from "react-scroll";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import {
+  SiMongodb,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiExpress,
+} from "react-icons/si";
 
 const ref = React.createRef();
 
@@ -240,11 +247,11 @@ const SpanText = styled.div`
   background: rgba(0, 0, 0, 0.582);
   color: rgba(255, 255, 255, 0.588);
   text-align: center;
-  height: 235px;
+  height: 296px;
 
   @media screen and (max-width: 480px) {
     padding: 0 1rem;
-    height: 220px;
+    height: 261px;
   }
 `;
 
@@ -320,6 +327,18 @@ export function Footer(props) {
                       </SpanSkill>
                       <SpanSkill>
                         <FontAwesomeIcon icon={faNode} />
+                      </SpanSkill>
+                      <SpanSkill>
+                        <SiMongodb />
+                      </SpanSkill>
+                      <SpanSkill>
+                        <SiNextdotjs />
+                      </SpanSkill>
+                      <SpanSkill>
+                        <SiTailwindcss />
+                      </SpanSkill>
+                      <SpanSkill>
+                        <SiExpress />
                       </SpanSkill>
                     </Skills>
                   </Content>
