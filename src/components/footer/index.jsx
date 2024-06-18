@@ -157,7 +157,7 @@ const SpanSkill = styled.div`
   font-size: 2.5rem;
 
   @media screen and (max-width: 480px) {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.9rem, 2.5vw, 1.5rem);
   }
 `;
 
