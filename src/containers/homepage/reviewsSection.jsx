@@ -131,8 +131,7 @@ const ReviewsContainer = styled(Element)`
   height: 100vh;
 
   @media screen and (max-width: 480px) {
-    height: auto !important;
-    padding: 1rem;
+    height: fit-content;
   }
 `;
 
@@ -169,15 +168,13 @@ const StyledDotGroup = styled(DotGroup)`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    /* width: 90%; */
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and (max-width: 480px) {
-    margin: 3rem 0 0;
-    /* top: 20rem; */
-    /* background: orange; */
+    top: 20rem;
   }
 
   button {
