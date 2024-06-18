@@ -144,6 +144,7 @@ const StyledCarouselProvider = styled(CarouselProvider)`
     margin-top: 3rem;
 
     @media screen and (max-width: 480px) {
+      margin-bottom: 2rem;
     }
   }
 `;
