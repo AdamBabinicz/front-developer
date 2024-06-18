@@ -128,20 +128,24 @@ const ReviewsContainer = styled(Element)`
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url(${BackgroundImg}) center/cover no-repeat fixed;
-  /* height: 100vh; */
+  height: 100vh;
 
   @media screen and (max-width: 480px) {
-    justify-content: space-around;
+    height: auto !important;
+    padding: 1rem;
   }
 `;
 
 const StyledCarouselProvider = styled(CarouselProvider)`
   width: 80%;
-  /* position: relative; */
+  position: relative;
 
   @media screen and (max-width: 768px) {
     width: 100%;
     margin-top: 3rem;
+
+    @media screen and (max-width: 480px) {
+    }
   }
 `;
 const StyledSlide = styled(Slide)`
@@ -156,34 +160,25 @@ const StyledSlide = styled(Slide)`
 `;
 
 const StyledDotGroup = styled(DotGroup)`
-  margin-top: -5rem;
-  margin-bottom: 3rem;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  margin: 0;
   width: 100%;
-  display: -webkit-box;
-  /* -webkit-line-clamp: 3; */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    margin-top: 2.5rem;
-    /* position: absolute; */
-    margin-bottom: 5rem;
-    width: 90%;
+    /* width: 90%; */
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
   }
 
   @media screen and (max-width: 480px) {
-    margin-top: -9rem;
-    /* position: absolute; */
-    margin-bottom: 2rem;
-    overflow: hidden;
+    /* top: 20rem; */
+    /* background: orange; */
   }
+
   button {
     width: 11px;
     height: 11px;
@@ -196,12 +191,6 @@ const StyledDotGroup = styled(DotGroup)`
       margin-right: 3px;
     }
   }
-
-  /* .carousel__dot {
-    @media screen and (max-width: 768px) {
-      overflow: hidden;
-    }
-  } */
 
   .carousel__dot--selected {
     background: ${theme.third};
