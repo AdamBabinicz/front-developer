@@ -7,6 +7,8 @@ import { Logo } from "../logo";
 import { Marginer } from "../navbar/marginer";
 import { theme } from "../../theme";
 import { FaTimes } from "react-icons/fa";
+import { FaStripe } from "react-icons/fa6";
+import { TbBrandVscode } from "react-icons/tb";
 import {
   faTwitter,
   faGoogle,
@@ -21,7 +23,6 @@ import {
   faJs,
   faBootstrap,
   faNode,
-  faMdb,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
@@ -37,6 +38,9 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiExpress,
+  SiRedux,
+  SiFirebase,
+  SiVite,
 } from "react-icons/si";
 
 const ref = React.createRef();
@@ -251,7 +255,7 @@ const SpanText = styled.div`
 
   @media screen and (max-width: 480px) {
     padding: 0 1rem;
-    height: 261px;
+    height: 307px;
   }
 `;
 
@@ -339,6 +343,21 @@ export function Footer(props) {
                       </SpanSkill>
                       <SpanSkill>
                         <SiExpress />
+                      </SpanSkill>
+                      <SpanSkill>
+                        <SiRedux />
+                      </SpanSkill>
+                      <SpanSkill>
+                        <SiFirebase />
+                      </SpanSkill>
+                      <SpanSkill>
+                        <FaStripe />
+                      </SpanSkill>
+                      <SpanSkill>
+                        <TbBrandVscode />
+                      </SpanSkill>
+                      <SpanSkill>
+                        <SiVite />
                       </SpanSkill>
                     </Skills>
                   </Content>

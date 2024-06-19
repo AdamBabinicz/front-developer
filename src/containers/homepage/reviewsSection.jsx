@@ -128,7 +128,7 @@ const ReviewsContainer = styled(Element)`
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url(${BackgroundImg}) center/cover no-repeat fixed;
-  height: 100vh;
+  /* height: 100vh; */
 
   @media screen and (max-width: 480px) {
     height: fit-content;
@@ -167,6 +167,7 @@ const StyledDotGroup = styled(DotGroup)`
   left: 0;
   right: 0;
   text-align: center;
+  padding-bottom: 3rem;
 
   @media screen and (max-width: 768px) {
     width: 90%;

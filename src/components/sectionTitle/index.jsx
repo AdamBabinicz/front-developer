@@ -5,8 +5,8 @@ const { default: styled } = require("styled-components");
 
 export const SectionTitle = styled.h2`
   font-size: 34px;
-  margin: 3rem 0;
   font-weight: bold;
+  margin: 3rem 0;
   color: ${theme.primary};
   text-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72);
 
