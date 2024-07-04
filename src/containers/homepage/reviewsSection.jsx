@@ -120,6 +120,7 @@ import User107Img from "../../assets/pictures/blog-natanka.jpg";
 import User108Img from "../../assets/pictures/wartosci.jpg";
 import User109Img from "../../assets/pictures/niedzwiecki.jpg";
 import User110Img from "../../assets/pictures/natek.jpg";
+import User111Img from "../../assets/pictures/nat.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -206,7 +207,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={110}
+        totalSlides={111}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1089,6 +1090,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User110Img}
               userurl="//natek.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={110}>
+            <ReviewCard
+              reviewText="Natko"
+              username="Projekt prywatny"
+              userImgUrl={User111Img}
+              userurl="//natko.netlify.app/"
             />
           </StyledSlide>
         </Slider>
