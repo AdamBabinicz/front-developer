@@ -370,7 +370,8 @@ export function Footer(props) {
                     >
                       {(close) => (
                         <SpanText>
-                          Języki programowania stosowane w naszych projektach
+                          Języki programowania oraz narzędzia stosowane w
+                          naszych projektach
                           <Button smallB onClick={close}>
                             <FaTimes />
                           </Button>
