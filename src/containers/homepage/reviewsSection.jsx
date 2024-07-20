@@ -122,6 +122,7 @@ import User109Img from "../../assets/pictures/niedzwiecki.jpg";
 import User110Img from "../../assets/pictures/natek.jpg";
 import User111Img from "../../assets/pictures/nat.jpg";
 import User112Img from "../../assets/pictures/dobrowolski.jpg";
+import User113Img from "../../assets/pictures/namioty.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -208,7 +209,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={112}
+        totalSlides={113}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1107,6 +1108,14 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User112Img}
               userurl="//dobrowolski.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={112}>
+            <ReviewCard
+              reviewText="Wynajem namiotów"
+              username="Wynajem namiotów"
+              userImgUrl={User113Img}
+              userurl="//wynajem-namiotow.netlify.app/"
             />
           </StyledSlide>
         </Slider>
