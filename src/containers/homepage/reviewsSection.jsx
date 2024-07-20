@@ -1113,7 +1113,7 @@ export function ReviewsSection(props) {
           <StyledSlide index={112}>
             <ReviewCard
               reviewText="Wynajem namiotów"
-              username="Wynajem namiotów"
+              username="Firma eventowa"
               userImgUrl={User113Img}
               userurl="//wynajem-namiotow.netlify.app/"
             />

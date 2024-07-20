@@ -65,7 +65,7 @@ const QuoteIcon = styled.div`
 
 const ReviewText = styled.p`
   /* font-size: 28px; */
-  font-size: clamp(1rem, 2.5vw, 3rem);
+  font-size: clamp(1rem, 2.5vw, 2rem);
   color: ${theme.primary};
   font-weight: normal;
   display: flex;
@@ -73,6 +73,7 @@ const ReviewText = styled.p`
   text-align: center;
   text-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72);
   text-wrap: balance;
+  text-overflow: ellipsis; /* Zastąp nadmiar treści wielokropkiem */
 
   /* @media screen and (max-width: 1100px) {
     font-size: 20px;
