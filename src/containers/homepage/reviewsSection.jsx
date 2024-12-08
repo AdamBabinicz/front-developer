@@ -123,6 +123,7 @@ import User110Img from "../../assets/pictures/natek.jpg";
 import User111Img from "../../assets/pictures/nat.jpg";
 import User112Img from "../../assets/pictures/dobrowolski.jpg";
 import User113Img from "../../assets/pictures/namioty.jpg";
+import User114Img from "../../assets/pictures/shn.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -209,7 +210,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={113}
+        totalSlides={114}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1116,6 +1117,14 @@ export function ReviewsSection(props) {
               username="Firma eventowa"
               userImgUrl={User113Img}
               userurl="//wynajem-namiotow.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={113}>
+            <ReviewCard
+              reviewText="Second Hand New"
+              username="Firma handlowa"
+              userImgUrl={User114Img}
+              userurl="//second-hand-new.pl/"
             />
           </StyledSlide>
         </Slider>
