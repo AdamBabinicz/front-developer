@@ -124,6 +124,7 @@ import User111Img from "../../assets/pictures/nat.jpg";
 import User112Img from "../../assets/pictures/dobrowolski.jpg";
 import User113Img from "../../assets/pictures/namioty.jpg";
 import User114Img from "../../assets/pictures/shn.jpg";
+import User115Img from "../../assets/pictures/jacek.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -210,7 +211,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={114}
+        totalSlides={115}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1125,6 +1126,14 @@ export function ReviewsSection(props) {
               username="Firma handlowa"
               userImgUrl={User114Img}
               userurl="//second-hand-new.pl/"
+            />
+          </StyledSlide>
+          <StyledSlide index={114}>
+            <ReviewCard
+              reviewText="Rodzina Jacka"
+              username="Projekt prywatny"
+              userImgUrl={User115Img}
+              userurl="//jacek.netlify.app/"
             />
           </StyledSlide>
         </Slider>
