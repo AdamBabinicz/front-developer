@@ -16,7 +16,7 @@ import User3Img from "../../assets/pictures/3b.jpg";
 import User4Img from "../../assets/pictures/4b.jpg";
 import User5Img from "../../assets/pictures/5b.jpg";
 import User6Img from "../../assets/pictures/6b.jpg";
-import User7Img from "../../assets/pictures/7b.jpg";
+import User7Img from "../../assets/pictures/podroze.jpg";
 import User8Img from "../../assets/pictures/8b.jpg";
 import User9Img from "../../assets/pictures/9b.jpg";
 import User10Img from "../../assets/pictures/10b.jpg";
@@ -266,10 +266,10 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={6}>
             <ReviewCard
-              reviewText="Pa-Mi"
-              username="Ślusarstwo art."
+              reviewText="Gosia i przyjaciele"
+              username="Projekt prywatny"
               userImgUrl={User7Img}
-              userurl="//www.pa-mi.pl"
+              userurl="//podroze-gosi.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={7}>
