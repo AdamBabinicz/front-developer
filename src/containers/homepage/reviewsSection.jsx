@@ -125,6 +125,7 @@ import User112Img from "../../assets/pictures/dobrowolski.jpg";
 import User113Img from "../../assets/pictures/namioty.jpg";
 import User114Img from "../../assets/pictures/shn.jpg";
 import User115Img from "../../assets/pictures/jacek.jpg";
+import User116Img from "../../assets/pictures/aqua.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -211,7 +212,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={115}
+        totalSlides={116}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1134,6 +1135,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User115Img}
               userurl="//jacek.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={115}>
+            <ReviewCard
+              reviewText="Aqua fitness 55+"
+              username="Projekt prywatny"
+              userImgUrl={User116Img}
+              userurl="//aquafitness.netlify.app/"
             />
           </StyledSlide>
         </Slider>
