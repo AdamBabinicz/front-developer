@@ -18,7 +18,7 @@ import User5Img from "../../assets/pictures/5b.jpg";
 import User6Img from "../../assets/pictures/6b.jpg";
 import User7Img from "../../assets/pictures/podroze.jpg";
 import User8Img from "../../assets/pictures/8b.jpg";
-import User9Img from "../../assets/pictures/9b.jpg";
+import User9Img from "../../assets/pictures/tent.jpg";
 import User10Img from "../../assets/pictures/10b.jpg";
 import User11Img from "../../assets/pictures/11b.jpg";
 import User12Img from "../../assets/pictures/12b.jpg";
@@ -283,10 +283,10 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={8}>
             <ReviewCard
-              reviewText="Fotobudka"
+              reviewText="Namioty imprezowe"
               username="Firma eventowa"
               userImgUrl={User9Img}
-              userurl="//foto-budka.netlify.com"
+              userurl="//namioty-imprezowe.netlify.com"
             />
           </StyledSlide>
           <StyledSlide index={9}>
