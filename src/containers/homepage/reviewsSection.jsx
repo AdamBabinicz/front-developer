@@ -286,7 +286,7 @@ export function ReviewsSection(props) {
               reviewText="Namioty imprezowe"
               username="Firma eventowa"
               userImgUrl={User9Img}
-              userurl="//namioty-imprezowe.netlify.com"
+              userurl="//namioty-imprezowe.netlify.app"
             />
           </StyledSlide>
           <StyledSlide index={9}>
