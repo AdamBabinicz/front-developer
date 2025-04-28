@@ -126,6 +126,8 @@ import User113Img from "../../assets/pictures/namioty.jpg";
 import User114Img from "../../assets/pictures/shn.jpg";
 import User115Img from "../../assets/pictures/jacek.jpg";
 import User116Img from "../../assets/pictures/aqua.jpg";
+import User117Img from "../../assets/pictures/mosiolek.jpg";
+import User118Img from "../../assets/pictures/eurotrek.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -212,7 +214,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={116}
+        totalSlides={118}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1145,11 +1147,25 @@ export function ReviewsSection(props) {
               userurl="//aquafitness.netlify.app/"
             />
           </StyledSlide>
+          <StyledSlide index={116}>
+            <ReviewCard
+              reviewText="Paweł Mosiołek"
+              username="Projekt oficjalny"
+              userImgUrl={User117Img}
+              userurl="//pawelmosiolek.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={117}>
+            <ReviewCard
+              reviewText="Grupa studencka 'EuroTrek'"
+              username="Projekt oficjalny"
+              userImgUrl={User118Img}
+              userurl="//eurotrek.netlify.app/"
+            />
+          </StyledSlide>
         </Slider>
         <StyledDotGroup />
       </StyledCarouselProvider>
     </ReviewsContainer>
   );
 }
-
-// zmiany po zmianach, więcej zmian
