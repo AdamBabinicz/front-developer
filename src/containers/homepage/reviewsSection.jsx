@@ -1167,7 +1167,7 @@ export function ReviewsSection(props) {
           <StyledSlide index={118}>
             <ReviewCard
               reviewText="Teoria dr Nikodema Popławskiego"
-              username="Projekt oficjalny"
+              username="Projekt prywatny"
               userImgUrl={User119Img}
               userurl="//blackhole-universe.netlify.app"
             />
