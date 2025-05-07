@@ -128,6 +128,7 @@ import User115Img from "../../assets/pictures/jacek.jpg";
 import User116Img from "../../assets/pictures/aqua.jpg";
 import User117Img from "../../assets/pictures/mosiolek.jpg";
 import User118Img from "../../assets/pictures/eurotrek.jpg";
+import User119Img from "../../assets/pictures/poplawski.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -214,7 +215,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={118}
+        totalSlides={119}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1161,6 +1162,14 @@ export function ReviewsSection(props) {
               username="Projekt oficjalny"
               userImgUrl={User118Img}
               userurl="//eurotrek.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={118}>
+            <ReviewCard
+              reviewText="Teoria dr Nikodema Popławskiego"
+              username="Projekt oficjalny"
+              userImgUrl={User119Img}
+              userurl="//blackhole-universe.netlify.app"
             />
           </StyledSlide>
         </Slider>
