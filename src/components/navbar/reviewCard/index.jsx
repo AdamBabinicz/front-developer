@@ -156,16 +156,16 @@ export function ReviewCard(props) {
   return (
     <CardContainer>
       <QuoteIcon>
-        <Link to={userurl} rel="noopener noreferrer" target="_blank">
+        <a href={userurl} rel="noopener noreferrer" target="_blank">
           <FontAwesomeIcon icon={faLink} />
-        </Link>
+        </a>
       </QuoteIcon>
       <Marginer direction="vertical" margin="5em" />
       <ReviewText>{reviewText}</ReviewText>
       <Marginer direction="vertical" margin="7em" />
       <Line />
       <UserDetails>
-        <UserImg src={userImgUrl} alt="..." />
+        <UserImg src={userImgUrl} alt={`Zdjęcie użytkownika ${username}`} />
         <Username>{username}</Username>
       </UserDetails>
     </CardContainer>
