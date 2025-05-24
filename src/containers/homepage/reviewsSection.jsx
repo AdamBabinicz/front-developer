@@ -129,6 +129,7 @@ import User116Img from "../../assets/pictures/aqua.jpg";
 import User117Img from "../../assets/pictures/mosiolek.jpg";
 import User118Img from "../../assets/pictures/eurotrek.jpg";
 import User119Img from "../../assets/pictures/poplawski.jpg";
+import User120Img from "../../assets/pictures/pucus.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -215,7 +216,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={119}
+        totalSlides={120}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1170,6 +1171,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User119Img}
               userurl="//blackhole-universe.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={119}>
+            <ReviewCard
+              reviewText="Pralnia Super Pucuś"
+              username="Projekt firmowy"
+              userImgUrl={User120Img}
+              userurl="//pranie-dywanow.j.pl"
             />
           </StyledSlide>
         </Slider>
