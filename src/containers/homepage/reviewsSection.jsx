@@ -15,7 +15,7 @@ import User2Img from "../../assets/pictures/dziury.jpg";
 import User3Img from "../../assets/pictures/3b.jpg";
 import User4Img from "../../assets/pictures/4b.jpg";
 import User5Img from "../../assets/pictures/5b.jpg";
-import User6Img from "../../assets/pictures/6b.jpg";
+import User6Img from "../../assets/pictures/ai.jpg";
 import User7Img from "../../assets/pictures/podroze.jpg";
 import User8Img from "../../assets/pictures/8b.jpg";
 import User9Img from "../../assets/pictures/tent.jpg";
@@ -263,10 +263,10 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={5}>
             <ReviewCard
-              reviewText="Super Pucuś"
-              username="Pralnia mobilna"
+              reviewText="Sztuczna Inteligencja"
+              username="AI"
               userImgUrl={User6Img}
-              userurl="//pranie-dywanow.j.pl"
+              userurl="//neural-core.netlify.app/"
             />
           </StyledSlide>
           <StyledSlide index={6}>
