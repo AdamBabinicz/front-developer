@@ -131,6 +131,7 @@ import User118Img from "../../assets/pictures/eurotrek.jpg";
 import User119Img from "../../assets/pictures/poplawski.jpg";
 import User120Img from "../../assets/pictures/pucus.jpg";
 import User121Img from "../../assets/pictures/rod.jpg";
+import User122Img from "../../assets/pictures/rutkowski.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -217,7 +218,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={121}
+        totalSlides={122}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1188,6 +1189,14 @@ export function ReviewsSection(props) {
               username="Projekt prywatny"
               userImgUrl={User121Img}
               userurl="//rodowekorzenie.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={121}>
+            <ReviewCard
+              reviewText="Zbigniew Rutkowski"
+              username="Projekt publiczny"
+              userImgUrl={User122Img}
+              userurl="//zbigniew-rutkowski.netlify.app"
             />
           </StyledSlide>
         </Slider>
