@@ -16,17 +16,14 @@ const CardContainer = styled.div`
   padding: 10px 1.2em;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
 
   @media screen and (max-width: 768px) {
     padding: 0;
-    /* margin-top: 3rem; */
   }
 
   @media screen and (max-width: 480px) {
     max-height: 300px;
-    /* width: 80%; */
     margin: 0;
   }
 `;
@@ -64,7 +61,6 @@ const QuoteIcon = styled.div`
 `;
 
 const ReviewText = styled.p`
-  /* font-size: 28px; */
   font-size: clamp(1rem, 2.5vw, 2rem);
   color: ${theme.primary};
   font-weight: normal;
@@ -73,15 +69,7 @@ const ReviewText = styled.p`
   text-align: center;
   text-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.72);
   text-wrap: balance;
-  text-overflow: ellipsis; /* Zastąp nadmiar treści wielokropkiem */
-
-  /* @media screen and (max-width: 1100px) {
-    font-size: 20px;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 15px;
-  } */
+  text-overflow: ellipsis;
 
   @media screen and (max-width: 480px) {
     font-size: 28px;
@@ -110,6 +98,7 @@ const UserImg = styled.img`
   margin-bottom: 20px;
   box-shadow: 0.05rem 0.05rem 0.05rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
+  cursor: pointer; /* Dodajemy kursor, aby było wiadomo, że obrazek jest klikalny */
 
   &:hover {
     transform: scale(1.1);
@@ -125,27 +114,18 @@ const UserImg = styled.img`
 
   @media screen and (max-width: 480px) {
     width: 165px;
-    max-width: 100%; /* Dodanie maksymalnej szerokości */
-    max-height: 185px; /* Dodanie maksymalnej wysokości */
+    max-width: 100%;
+    max-height: 185px;
     object-fit: cover;
     margin-left: 20px;
   }
 `;
 
 const Username = styled.span`
-  /* font-size: 20px; */
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: ${theme.primary};
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-
-  /* @media screen and (max-width: 1100px) {
-    font-size: 15px;
-  } */
-
-  /* @media screen and (max-width: 768px) {
-    font-size: 15px;
-  } */
 `;
 const UserUrl = styled.span`
   cursor: pointer;
@@ -153,10 +133,24 @@ const UserUrl = styled.span`
 
 export function ReviewCard(props) {
   const { reviewText, username, userImgUrl, userurl } = props;
+
+  // Ta funkcja zatrzymuje "bąbelkowanie" zdarzenia do karuzeli
+  const stopPropagation = (e) => {
+    e.stopPropagation();
+  };
+
   return (
     <CardContainer>
       <QuoteIcon>
-        <a href={userurl} rel="noopener noreferrer" target="_blank">
+        {/* Zabezpieczamy również ikonkę */}
+        <a
+          href={userurl}
+          rel="noopener noreferrer"
+          target="_blank"
+          draggable="false"
+          onMouseDown={stopPropagation}
+          onTouchStart={stopPropagation}
+        >
           <FontAwesomeIcon icon={faLink} />
         </a>
       </QuoteIcon>
@@ -165,7 +159,21 @@ export function ReviewCard(props) {
       <Marginer direction="vertical" margin="7em" />
       <Line />
       <UserDetails>
-        <UserImg src={userImgUrl} alt={`Zdjęcie użytkownika ${username}`} />
+        {/* Obrazek jest teraz opakowany w link z zabezpieczeniami */}
+        <a
+          href={userurl}
+          rel="noopener noreferrer"
+          target="_blank"
+          draggable="false"
+          onMouseDown={stopPropagation}
+          onTouchStart={stopPropagation}
+        >
+          <UserImg
+            src={userImgUrl}
+            alt={`Zdjęcie użytkownika ${username}`}
+            draggable="false"
+          />
+        </a>
         <Username>{username}</Username>
       </UserDetails>
     </CardContainer>
