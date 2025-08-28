@@ -132,6 +132,8 @@ import User119Img from "../../assets/pictures/poplawski.jpg";
 import User120Img from "../../assets/pictures/pucus.jpg";
 import User121Img from "../../assets/pictures/rod.jpg";
 import User122Img from "../../assets/pictures/rutkowski.jpg";
+import User123Img from "../../assets/pictures/zbuduj.jpg";
+import User124Img from "../../assets/pictures/kwanty.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -218,7 +220,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={122}
+        totalSlides={124}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1197,6 +1199,22 @@ export function ReviewsSection(props) {
               username="Projekt publiczny"
               userImgUrl={User122Img}
               userurl="//zbigniew-rutkowski.netlify.app"
+            />
+          </StyledSlide>
+          <StyledSlide index={122}>
+            <ReviewCard
+              reviewText="Zbuduj stronę w Replit"
+              username="Projekt publiczny"
+              userImgUrl={User123Img}
+              userurl="//zbuduj-strone.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={123}>
+            <ReviewCard
+              reviewText="Kwantowy Portal"
+              username="Projekt publiczny"
+              userImgUrl={User124Img}
+              userurl="//kwanty.netlify.app/"
             />
           </StyledSlide>
         </Slider>
