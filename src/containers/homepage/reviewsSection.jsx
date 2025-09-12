@@ -134,8 +134,8 @@ import User121Img from "../../assets/pictures/rod.jpg";
 import User122Img from "../../assets/pictures/rutkowski.jpg";
 import User123Img from "../../assets/pictures/zbuduj.jpg";
 import User124Img from "../../assets/pictures/kwanty.jpg";
-import User124Img from "../../assets/pictures/akademia.jpg";
-import User124Img from "../../assets/pictures/thonet.jpg";
+import User125Img from "../../assets/pictures/akademia.jpg";
+import User126Img from "../../assets/pictures/thonet.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
