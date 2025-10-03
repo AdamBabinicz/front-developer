@@ -136,6 +136,8 @@ import User123Img from "../../assets/pictures/zbuduj.jpg";
 import User124Img from "../../assets/pictures/kwanty.jpg";
 import User125Img from "../../assets/pictures/akademia.jpg";
 import User126Img from "../../assets/pictures/thonet.jpg";
+import User127Img from "../../assets/pictures/antypowabne.jpg";
+import User128Img from "../../assets/pictures/dunajski.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -222,7 +224,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={126}
+        totalSlides={128}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1233,6 +1235,22 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User126Img}
               userurl="//wizjoner.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={126}>
+            <ReviewCard
+              reviewText="Wiersze Antypowabne"
+              username="Projekt prywatny"
+              userImgUrl={User127Img}
+              userurl="//antypowabne.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={127}>
+            <ReviewCard
+              reviewText="prof. Maciej Dunajski"
+              username="Projekt edukacyjny"
+              userImgUrl={User128Img}
+              userurl="//dunajski.netlify.app/"
             />
           </StyledSlide>
         </Slider>
