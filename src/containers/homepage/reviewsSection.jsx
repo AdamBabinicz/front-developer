@@ -138,6 +138,8 @@ import User125Img from "../../assets/pictures/akademia.jpg";
 import User126Img from "../../assets/pictures/thonet.jpg";
 import User127Img from "../../assets/pictures/antypowabne.jpg";
 import User128Img from "../../assets/pictures/dunajski.jpg";
+import User129Img from "../../assets/pictures/hawking.jpg";
+import User130Img from "../../assets/pictures/aqua-plus.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -224,7 +226,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={128}
+        totalSlides={130}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1251,6 +1253,22 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User128Img}
               userurl="//dunajski.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={128}>
+            <ReviewCard
+              reviewText="Stephen Hawking"
+              username="Projekt edukacyjny"
+              userImgUrl={User129Img}
+              userurl="//odysejahawkinga.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={129}>
+            <ReviewCard
+              reviewText="Aqua Senior"
+              username="Projekt edukacyjny"
+              userImgUrl={User130Img}
+              userurl="//aqua-plus.netlify.app/"
             />
           </StyledSlide>
         </Slider>
