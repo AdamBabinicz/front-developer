@@ -140,6 +140,8 @@ import User127Img from "../../assets/pictures/antypowabne.jpg";
 import User128Img from "../../assets/pictures/dunajski.jpg";
 import User129Img from "../../assets/pictures/hawking.jpg";
 import User130Img from "../../assets/pictures/aqua-plus.jpg";
+import User131Img from "../../assets/pictures/konstelacja.jpg";
+import User132Img from "../../assets/pictures/ewangelie.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -226,7 +228,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={130}
+        totalSlides={132}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1269,6 +1271,22 @@ export function ReviewsSection(props) {
               username="Projekt edukacyjny"
               userImgUrl={User130Img}
               userurl="//aqua-plus.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={130}>
+            <ReviewCard
+              reviewText="Konstelacja Pasji"
+              username="Projekt autobiograficzny"
+              userImgUrl={User131Img}
+              userurl="//konstelacjapasji.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={131}>
+            <ReviewCard
+              reviewText="Niedzielne Światło"
+              username="Lekcjonarz mszalny"
+              userImgUrl={User132Img}
+              userurl="//ewangelie.netlify.app/"
             />
           </StyledSlide>
         </Slider>
