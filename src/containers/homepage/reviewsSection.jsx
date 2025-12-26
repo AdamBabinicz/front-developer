@@ -123,7 +123,7 @@ import User110Img from "../../assets/pictures/natek.jpg";
 import User111Img from "../../assets/pictures/nat.jpg";
 import User112Img from "../../assets/pictures/dobrowolski.jpg";
 import User113Img from "../../assets/pictures/namioty.jpg";
-import User114Img from "../../assets/pictures/shn.jpg";
+import User114Img from "../../assets/pictures/prorocy.jpg";
 import User115Img from "../../assets/pictures/jacek.jpg";
 import User116Img from "../../assets/pictures/aqua.jpg";
 import User117Img from "../../assets/pictures/mosiolek.jpg";
@@ -1139,10 +1139,10 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={113}>
             <ReviewCard
-              reviewText="Second Hand New"
-              username="Firma handlowa"
+              reviewText="Antologia Proroków"
+              username="Projekt edukacyjny"
               userImgUrl={User114Img}
-              userurl="//second-hand-new.pl/"
+              userurl="//antologia-prorokow.netlify.app/"
             />
           </StyledSlide>
           <StyledSlide index={114}>
