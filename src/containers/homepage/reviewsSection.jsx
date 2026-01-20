@@ -1,5 +1,11 @@
-import { CarouselProvider, DotGroup, Slide, Slider } from "pure-react-carousel";
-import React from "react";
+import {
+  CarouselContext,
+  CarouselProvider,
+  Dot,
+  Slide,
+  Slider,
+} from "pure-react-carousel";
+import React, { useContext, useEffect, useState } from "react";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 import { Marginer } from "../../components/navbar/marginer";
@@ -143,15 +149,17 @@ import User130Img from "../../assets/pictures/aqua-plus.jpg";
 import User131Img from "../../assets/pictures/konstelacja.jpg";
 import User132Img from "../../assets/pictures/ewangelie.jpg";
 import User133Img from "../../assets/pictures/korki.jpg";
+import User134Img from "../../assets/pictures/swieci.jpg";
+import User135Img from "../../assets/pictures/kuchnia.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url(${BackgroundImg}) center/cover no-repeat fixed;
-  /* height: 100vh; */
 
   @media screen and (max-width: 480px) {
     height: fit-content;
@@ -171,6 +179,7 @@ const StyledCarouselProvider = styled(CarouselProvider)`
     }
   }
 `;
+
 const StyledSlide = styled(Slide)`
   .carousel__inner-slide {
     display: flex;
@@ -182,14 +191,15 @@ const StyledSlide = styled(Slide)`
   }
 `;
 
-const StyledDotGroup = styled(DotGroup)`
+const StyledDotContainer = styled.div`
   margin: 0;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   padding-bottom: 3rem;
 
   @media screen and (max-width: 768px) {
@@ -200,6 +210,7 @@ const StyledDotGroup = styled(DotGroup)`
 
   @media screen and (max-width: 480px) {
     top: 20rem;
+    padding-bottom: 0;
   }
 
   button {
@@ -209,10 +220,9 @@ const StyledDotGroup = styled(DotGroup)`
     background: ${theme.primary};
     border: none;
     outline: none;
-
-    &:not(:last-of-type) {
-      margin-right: 3px;
-    }
+    margin: 0 3px;
+    cursor: pointer;
+    transition: background 0.3s;
   }
 
   .carousel__dot--selected {
@@ -220,8 +230,44 @@ const StyledDotGroup = styled(DotGroup)`
   }
 `;
 
+const SlidingDotGroup = ({ totalSlides, visibleDots = 10 }) => {
+  const context = useContext(CarouselContext);
+  const [currentSlide, setCurrentSlide] = useState(context.state.currentSlide);
+
+  useEffect(() => {
+    function onChange() {
+      setCurrentSlide(context.state.currentSlide);
+    }
+    context.subscribe(onChange);
+    return () => context.unsubscribe(onChange);
+  }, [context]);
+
+  let start = Math.floor(currentSlide - visibleDots / 2);
+
+  if (start < 0) {
+    start = 0;
+  } else if (start + visibleDots > totalSlides) {
+    start = totalSlides - visibleDots;
+  }
+
+  if (totalSlides < visibleDots) {
+    start = 0;
+  }
+
+  const dots = [];
+  for (let i = 0; i < visibleDots; i++) {
+    const slideIndex = start + i;
+    if (slideIndex < totalSlides) {
+      dots.push(<Dot slide={slideIndex} key={slideIndex} />);
+    }
+  }
+
+  return <StyledDotContainer>{dots}</StyledDotContainer>;
+};
+
 export function ReviewsSection(props) {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
+
   return (
     <ReviewsContainer name="project">
       <SectionTitle>Realizacje</SectionTitle>
@@ -229,7 +275,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={133}
+        totalSlides={135}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1292,14 +1338,30 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={132}>
             <ReviewCard
+              reviewText="Święci Kościoła"
+              username="Święci Kościoła Katolickiego"
+              userImgUrl={User134Img}
+              userurl="//lux-sanctorum.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={133}>
+            <ReviewCard
               reviewText="Math Mentor"
               username="Korepetycje z matematyki"
               userImgUrl={User133Img}
               userurl="//mathmentor-app.onrender.com/"
             />
           </StyledSlide>
+          <StyledSlide index={134}>
+            <ReviewCard
+              reviewText="Kuchnia Polska"
+              username="Sekrety Kuchni Polskiej"
+              userImgUrl={User135Img}
+              userurl="//kuchniapolska.netlify.app/"
+            />
+          </StyledSlide>
         </Slider>
-        <StyledDotGroup />
+        <SlidingDotGroup totalSlides={135} />
       </StyledCarouselProvider>
     </ReviewsContainer>
   );
