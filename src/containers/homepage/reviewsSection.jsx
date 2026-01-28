@@ -151,6 +151,8 @@ import User132Img from "../../assets/pictures/ewangelie.jpg";
 import User133Img from "../../assets/pictures/korki.jpg";
 import User134Img from "../../assets/pictures/swieci.jpg";
 import User135Img from "../../assets/pictures/kuchnia.jpg";
+import User136Img from "../../assets/pictures/wielocha.jpg";
+import User137Img from "../../assets/pictures/odnowa.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -275,7 +277,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={135}
+        totalSlides={137}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1360,8 +1362,24 @@ export function ReviewsSection(props) {
               userurl="//kuchniapolska.netlify.app/"
             />
           </StyledSlide>
+          <StyledSlide index={135}>
+            <ReviewCard
+              reviewText="Krzysztof Wielocha"
+              username="Sołtys, prezes OSP"
+              userImgUrl={User136Img}
+              userurl="//krzysztofwielocha.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={136}>
+            <ReviewCard
+              reviewText="Resurrexit"
+              username="Odnowa w Duchu Św."
+              userImgUrl={User137Img}
+              userurl="//surrexit-dominus.netlify.app/"
+            />
+          </StyledSlide>
         </Slider>
-        <SlidingDotGroup totalSlides={135} />
+        <SlidingDotGroup totalSlides={137} />
       </StyledCarouselProvider>
     </ReviewsContainer>
   );
