@@ -1372,7 +1372,7 @@ export function ReviewsSection(props) {
           </StyledSlide>
           <StyledSlide index={136}>
             <ReviewCard
-              reviewText="Resurrexit"
+              reviewText="Wspólnota charyzmatyczna"
               username="Odnowa w Duchu Św."
               userImgUrl={User137Img}
               userurl="//surrexit-dominus.netlify.app/"
