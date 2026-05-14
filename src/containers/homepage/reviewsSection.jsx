@@ -153,6 +153,9 @@ import User134Img from "../../assets/pictures/swieci.jpg";
 import User135Img from "../../assets/pictures/kuchnia.jpg";
 import User136Img from "../../assets/pictures/wielocha.jpg";
 import User137Img from "../../assets/pictures/odnowa.jpg";
+import User138Img from "../../assets/pictures/cichowska.jpg";
+import User139Img from "../../assets/pictures/mmos.jpg";
+import User140Img from "../../assets/pictures/julia.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -277,7 +280,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={137}
+        totalSlides={140}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1376,6 +1379,30 @@ export function ReviewsSection(props) {
               username="Odnowa w Duchu Św."
               userImgUrl={User137Img}
               userurl="//surrexit-dominus.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={137}>
+            <ReviewCard
+              reviewText="Projekt edukacyjny"
+              username="Irena Cichowska"
+              userImgUrl={User138Img}
+              userurl="//cichowska.onrender.com/"
+            />
+          </StyledSlide>
+          <StyledSlide index={138}>
+            <ReviewCard
+              reviewText="Projekt edukacyjny"
+              username="M-M-O-S"
+              userImgUrl={User139Img}
+              userurl="//orsetti-skwarczynska.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={139}>
+            <ReviewCard
+              reviewText="Projekt prywatny"
+              username="Julia Chabior"
+              userImgUrl={User140Img}
+              userurl="//julia-chabior.netlify.app/"
             />
           </StyledSlide>
         </Slider>
