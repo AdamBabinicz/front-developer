@@ -156,6 +156,9 @@ import User137Img from "../../assets/pictures/odnowa.jpg";
 import User138Img from "../../assets/pictures/cichowska.jpg";
 import User139Img from "../../assets/pictures/mmos.jpg";
 import User140Img from "../../assets/pictures/julia.jpg";
+import User141Img from "../../assets/pictures/logos.jpg";
+import User142Img from "../../assets/pictures/proca.jpg";
+import User143Img from "../../assets/pictures/klasa.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -280,7 +283,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={140}
+        totalSlides={143}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1405,8 +1408,32 @@ export function ReviewsSection(props) {
               userurl="//julia-chabior.netlify.app/"
             />
           </StyledSlide>
+          <StyledSlide index={140}>
+            <ReviewCard
+              reviewText="Projekt edukacyjny"
+              username="Rzeczywistość"
+              userImgUrl={User141Img}
+              userurl="//rzeczywistosc.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={141}>
+            <ReviewCard
+              reviewText="Projekt edukacyjny"
+              username="Alexandru Proca"
+              userImgUrl={User142Img}
+              userurl="//alexandru-proca.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={142}>
+            <ReviewCard
+              reviewText="Projekt prywatny"
+              username="Matura 1975"
+              userImgUrl={User143Img}
+              userurl="//klasab.netlify.app/"
+            />
+          </StyledSlide>
         </Slider>
-        <SlidingDotGroup totalSlides={137} />
+        <SlidingDotGroup totalSlides={143} />
       </StyledCarouselProvider>
     </ReviewsContainer>
   );
