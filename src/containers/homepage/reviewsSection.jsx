@@ -159,6 +159,8 @@ import User140Img from "../../assets/pictures/julia.jpg";
 import User141Img from "../../assets/pictures/logos.jpg";
 import User142Img from "../../assets/pictures/proca.jpg";
 import User143Img from "../../assets/pictures/klasa.jpg";
+import User144Img from "../../assets/pictures/wolyn_.jpg";
+import User145Img from "../../assets/pictures/wstrzas.jpg";
 
 const ReviewsContainer = styled(Element)`
   display: flex;
@@ -283,7 +285,7 @@ export function ReviewsSection(props) {
       <StyledCarouselProvider
         naturalSlideWidth={200}
         naturalSlideHeight={isMobile ? 250 : 205}
-        totalSlides={143}
+        totalSlides={145}
         visibleSlides={isMobile ? 1 : 3}
         dragEnabled={true}
       >
@@ -1432,8 +1434,24 @@ export function ReviewsSection(props) {
               userurl="//klasab.netlify.app/"
             />
           </StyledSlide>
+          <StyledSlide index={143}>
+            <ReviewCard
+              reviewText="Projekt edukacyjny"
+              username="Zbrodnia Wołyńska 1943"
+              userImgUrl={User144Img}
+              userurl="//wolyn-zbrodnia.netlify.app/"
+            />
+          </StyledSlide>
+          <StyledSlide index={144}>
+            <ReviewCard
+              reviewText="Pamiętnik autorski"
+              username="Lata dzieciństwa i młodości"
+              userImgUrl={User145Img}
+              userurl="//wstrzasy.netlify.app/"
+            />
+          </StyledSlide>
         </Slider>
-        <SlidingDotGroup totalSlides={143} />
+        <SlidingDotGroup totalSlides={145} />
       </StyledCarouselProvider>
     </ReviewsContainer>
   );
