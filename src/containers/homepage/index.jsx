@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { TopSection } from "./topSection";
-import { ServicesSection } from "./servicesSection";
-import { ReviewsSection } from "./reviewsSection";
+import { ServicesSection } from "./servicesSection"; // Zostawiamy tylko to
 import { Marginer } from "../../components/navbar/marginer";
 import { MoreAboutSection } from "./moreAboutSection";
 import { Footer } from "../../components/footer";
@@ -19,8 +18,7 @@ export function Homepage(props) {
     <PageContainer>
       <TopSection />
       <ServicesSection />
-      <Marginer direction="vertical" margin="2em" />
-      <ReviewsSection />
+      {/* Usunęliśmy stąd ReviewsSection i Marginer */}
       <MoreAboutSection />
       <Marginer direction="vertical" margin="8em" />
       <Footer />
