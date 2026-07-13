@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 import { Element, scroller } from "react-scroll";
 import Popup from "../Popup";
 import img0 from "../../assets/pictures/glob.svg";
-import img1 from "../../assets/pictures/19.jpg";
+import img1 from "../../assets/pictures/19.avif";
 
 const NavbarContainer = styled.div`
   width: 100%;
