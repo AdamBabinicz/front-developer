@@ -145,6 +145,10 @@ import User142Img from "../../assets/pictures/proca.jpg";
 import User143Img from "../../assets/pictures/klasa.jpg";
 import User144Img from "../../assets/pictures/wolyn_.jpg";
 import User145Img from "../../assets/pictures/wstrzas.jpg";
+import User146Img from "../../assets/pictures/grunwald.jpg";
+import User147Img from "../../assets/pictures/szafarnia.jpg";
+import User148Img from "../../assets/pictures/naukap.jpg";
+import User149Img from "../../assets/pictures/niezdecydowanie.jpg";
 
 export const projects = [
   {
@@ -1016,5 +1020,29 @@ export const projects = [
     txt: "Pamiętnik autorski",
     user: "Lata dzieciństwa i młodości",
     url: "//wstrzasy.netlify.app/",
+  },
+  {
+    img: User146Img,
+    txt: "Bitwa pod Grunwaldem",
+    user: "Projekt edukacyjny",
+    url: "//grunwald1410.netlify.app/",
+  },
+  {
+    img: User147Img,
+    txt: "Szafarnia - młodość Chopina",
+    user: "Projekt edukacyjny",
+    url: "//szafarnia.netlify.app/",
+  },
+  {
+    img: User148Img,
+    txt: "Nauka pływania",
+    user: "Projekt edukacyjny",
+    url: "//naukaplywania.netlify.app/",
+  },
+  {
+    img: User149Img,
+    txt: "Nowe horyzonty sztuki cyfrowej",
+    user: "Projekt innowacyjny",
+    url: "//niezdecydowanie.netlify.app/",
   },
 ];
