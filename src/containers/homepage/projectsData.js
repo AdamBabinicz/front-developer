@@ -602,7 +602,7 @@ export const projects = [
     url: "//kowalewski.netlify.app",
   },
   {
-    img: User75Img,
+    img: User76Img,
     txt: "Julia Zdanowska",
     user: "Protest antywojenny",
     url: "//zdanowska.netlify.app",
