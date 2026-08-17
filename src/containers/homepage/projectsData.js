@@ -149,6 +149,7 @@ import User146Img from "../../assets/pictures/grunwald.jpg";
 import User147Img from "../../assets/pictures/szafarnia.jpg";
 import User148Img from "../../assets/pictures/naukap.jpg";
 import User149Img from "../../assets/pictures/niezdecydowanie.jpg";
+import User150Img from "../../assets/pictures/maryja.jpg";
 
 export const projects = [
   {
@@ -1044,5 +1045,11 @@ export const projects = [
     txt: "Nowe horyzonty sztuki cyfrowej",
     user: "Projekt innowacyjny",
     url: "//niezdecydowanie.netlify.app/",
+  },
+  {
+    img: User150Img,
+    txt: "Matka Boża",
+    user: "Projekt religijny",
+    url: "//maryja-cicha-obecnosc.netlify.app/",
   },
 ];
