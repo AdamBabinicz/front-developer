@@ -150,6 +150,8 @@ import User147Img from "../../assets/pictures/szafarnia.jpg";
 import User148Img from "../../assets/pictures/naukap.jpg";
 import User149Img from "../../assets/pictures/niezdecydowanie.jpg";
 import User150Img from "../../assets/pictures/maryja.jpg";
+import User151Img from "../../assets/pictures/kotlet.jpg";
+import User152Img from "../../assets/pictures/minda.jpg";
 
 export const projects = [
   {
@@ -1051,5 +1053,17 @@ export const projects = [
     txt: "Matka Boża",
     user: "Projekt religijny",
     url: "//maryja-cicha-obecnosc.netlify.app/",
+  },
+  {
+    img: User151Img,
+    txt: "Piórkiem, węglem i kotletem",
+    user: "Projekt wspomnieniowy",
+    url: "//zin-i-kotlet.netlify.app/",
+  },
+  {
+    img: User152Img,
+    txt: "EM-FIT Ewa Minda",
+    user: "Projekt edukacyjny",
+    url: "//em-fit.netlify.app/",
   },
 ];
