@@ -1069,7 +1069,7 @@ export const projects = [
   },
   {
     img: User153Img,
-    txt: "Samouczek tańca szuraniec",
+    txt: "Samouczek tańca - Szuraniec",
     user: "Projekt edukacyjny",
     url: "//dwanajeden.netlify.app/",
   },
