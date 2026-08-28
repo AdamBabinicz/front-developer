@@ -152,6 +152,7 @@ import User149Img from "../../assets/pictures/niezdecydowanie.jpg";
 import User150Img from "../../assets/pictures/maryja.jpg";
 import User151Img from "../../assets/pictures/kotlet.jpg";
 import User152Img from "../../assets/pictures/minda.jpg";
+import User153Img from "../../assets/pictures/szuraniec.jpg";
 
 export const projects = [
   {
@@ -1065,5 +1066,11 @@ export const projects = [
     txt: "EM-FIT Ewa Minda",
     user: "Projekt edukacyjny",
     url: "//em-fit.netlify.app/",
+  },
+  {
+    img: User153Img,
+    txt: "Samouczek tańca szuraniec",
+    user: "Projekt edukacyjny",
+    url: "//dwanajeden.netlify.app/",
   },
 ];
