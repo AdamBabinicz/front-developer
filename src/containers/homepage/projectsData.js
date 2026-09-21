@@ -153,6 +153,9 @@ import User150Img from "../../assets/pictures/maryja.jpg";
 import User151Img from "../../assets/pictures/kotlet.jpg";
 import User152Img from "../../assets/pictures/minda.jpg";
 import User153Img from "../../assets/pictures/szuraniec.jpg";
+import User154Img from "../../assets/pictures/pomoc.jpg";
+import User155Img from "../../assets/pictures/natalia.jpg";
+import User156Img from "../../assets/pictures/trener.jpg";
 
 export const projects = [
   {
@@ -1072,5 +1075,23 @@ export const projects = [
     txt: "Samouczek tańca - Szuraniec",
     user: "Projekt edukacyjny",
     url: "//dwanajeden.netlify.app/",
+  },
+  {
+    img: User154Img,
+    txt: "Pierwsza Pomoc",
+    user: "Projekt edukacyjny",
+    url: "//lifeline-command.netlify.app/",
+  },
+  {
+    img: User155Img,
+    txt: "Pilates",
+    user: "Projekt firmowy",
+    url: "//natalia-gocol.netlify.app/",
+  },
+  {
+    img: User156Img,
+    txt: "Trener Personalny",
+    user: "Projekt szkoleniowy",
+    url: "//pulsemotion-firetv.netlify.app/",
   },
 ];
